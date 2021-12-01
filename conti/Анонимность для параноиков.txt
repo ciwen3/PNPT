@@ -1,0 +1,16 @@
+Пару замечаний к постам об анонимности для параноиков:
+
+1. Задача не скрыться (всё равно не получится), а слиться с толпой. Так что отключив webrtc, Javascript, Flash и т.д. будите только больше внимания к себе привлекать. Нужно НЕ ОТКЛЮЧАТЬ, а ПОДМЕНЯТЬ то что позволяет вас обнаружить.
+
+2. По поводу Kali и других ОС для хакеров. Вот есть группа людей (Хаккеров), которую нужно отследить. Технически эту задачу решить тяжело. Проще сыграть на человеческой слабости (лень) и собрать всех в кучу предоставив правильно разрекламированное, удобное, готовое и популярное решение. Думаю мысь понятна. Cоветую использовать Debian или собрать что-то свое.
+
+Saint спаибо за материал, добавил NetScan в алгоритм
+
+
+A couple of notes on posts about anonymity for the paranoid:
+
+1. The task is not to hide (it still won't work), but to merge with the crowd. So by disabling webrtc, Javascript, Flash, etc. just attract more attention to yourself. You should NOT DISCONNECT, but CHANGE what allows you to be detected.
+
+2. Concerning Kali and other operating systems for hackers. Here is a group of people (Hackers) that needs to be tracked. Technically, this problem is difficult to solve. It's easier to play on human weakness (laziness) and gather everyone together by providing a properly advertised, convenient, ready-made and popular solution. I think the idea is clear. I advise you to use Debian or build something of your own.
+
+Saint thanks for the material, added NetScan to the algorithm

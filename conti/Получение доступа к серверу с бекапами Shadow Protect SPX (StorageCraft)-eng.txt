@@ -1,0 +1,40 @@
+Gaining access to the server with Shadow Protect SPX (StorageCraft) backups
+==
+1. We go via RDP to one of the servers, in my case it is a SQL server.
+2. on the desktop we see the icon of the ShadowProtect SPX software
+   -> click on it
+3.the gui opens (if it asks for credits, we enter those under which we entered the rdp, or any other YES)
+4. On the left in the "Job Summary" block we see a detailed description of the backup scheme
+   in the "Name" field - the name of the backup of our server
+   in the field "Destination" - the place WHERE our spx adds backups, in the form NAME_BA_SERVAK (SHARA WITH BACKUP ON THIS SERVAK)
+
+from our example, we can conclude that all backups are saved in a ball named StorageCraft, and the folders with server backups are named with the name of the server itself.
+5. Knowing the name of the backup server, we want to get a better idea of ​​its structure, first of all we get the balls with the command "cmd.exe> ​​net view \\COH-DSS3 /ALL", in response we get "Error 5: Access Denied"
+6. There is no access, we try to knock with other accounts YES - the answer is the same - error no 5, it would be logical to assume that in order to gain access to the server we need either the credits of the local administrator on this very server, or a special user account with dedicated rights
+7. Suppose that if this is a dedicated user, then he has a name similar to the software \ function:
+   we iterate over the logins with the occurrence of substrings (here we need to turn on imagination):
+      Storage
+      Shadow
+      Protect
+      Craft
+      SP
+      SPX
+      Backup
+      BUUser
+      ETC.
+   after which we do a search on ntds.dit (hashes.txt.ntds) to find a hash, in my case the search was successful and I found the user Humanity.local\SPAdmin (I think it is clear here that this is Shadow Protect Admin) and his hash ce31b806821bec116ba03132ab5b3138, BUT unfortunately the search on cmd5.org did not give any result, and I desperately need a clearpass. (If you have enough hash, then congratulations - you have achieved the result)
+
+8. But if you still need a clear pass or you could not find a suitable user, we will understand that if the software somehow knocks on the server, then the credits are known to it, which means they could remain on the server.
+   Trying to dump hashes
+   I will not describe in detail how to do this, but you should try hashdump (and its legitimate counterparts) and logonpasswords (and analogs)
+   In my case, I used a facial expression and dumped the lsass, in which I found a clear pass from my account
+
+SPAdmin -         kerberos :
+         * Username : SPAdmin
+         * Domain   : COHBackup
+         * Password : Backup!User
+
+(in my case, for some reason, the domain was not Humanity.local but COHBackup, although you can also knock with Humanity.local (replace with your value))
+9. Go to the explorer, and open through it the necessary ball "\\COH-DSS3\StorageCraft" asks me for credits, I enter COHBackup\SPAdmin and Backup! User and successfully get access
+10. Also, in some grids, there may be several backup servers, as an option to check this, this is to click on the Backup button in the upper left corner of the goo (right after File) then - Destinations -> and see what paths there are for saving backups
+===

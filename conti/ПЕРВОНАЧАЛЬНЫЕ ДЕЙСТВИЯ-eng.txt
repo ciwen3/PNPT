@@ -1,0 +1,17 @@
+INITIAL ACTIONS
+
+1) Removing AD - allows us to find out how many servers and workstations are in the network, as well as information about users, who has what position, etc.
+2) Removing the ball (sharfinder) - with the help of it, we look where we have access with this user (on other PCs)
+3) Kerberos attack - pulls hashes from under memory, with successful removal and successful hashing - DomainAdmin is provided to us
+4) If we have system rights, using the command "hashdump" and "logonpasswords" we can pull off the hashes and mimics and we will have already flogged the domain user, and it happens that the domain of the admin
+5) If we found the login and hash domain of the admin and at the same time we could not hash hash, we make the following command pth Domain \ Admin pass (in the form of a hash), using the command shell dir \\ ip or hostname \ c $ we will check access to the server or workstation
+6) If we find the login \ pass domain of the admin or polzak, we can equip his token, the command looks like this make_token Domain \ Admin Pass, if you want to withdraw the token, the command rev2self
+7) If the session has a system process, using the getsystem command, you can raise the system rights to the session, paragraph (4)
+8) Also, do not forget to watch the processes using the ps command, there you can find the user, migrate to his process> Explore> Process list> then select the user process (the user must be different, not the one on the session) and click inject, select SSL listener
+9) After migrating to a new user, you also need to remove the balls to see where you can break with him
+10) When you shoot balls, then at the end of the withdrawal in the C: \ ProgramData directory and there is sh.txt or shares.txt, download, see how many "remote admin" there are in the text editor, if there are more than one, it means that access is on another computer
+11) Click on the session> File Browser> write the path \\ ip or hostname of the computer to which you have access \ c $, put the peloyd there, I'll give it out the same
+12) The launch of the peloid depends on its format exe or dll, after launching, I will personally explain later
+13) Ping servers and workstations like this, we need p.bat, I'll throw it into the group. We create a txt, call it domains.txt, add the hostnames of servers or workers there. Hostnames are taken from the removed blood pressure, using scripts, we will show them how to use
+14) If you find some kind of password, you can also run it through smb_login - this is a tool in metasploit, I will issue a metasploit and tell you how to use it. smb_login will show on which servers or workers, there is access with these credits
+

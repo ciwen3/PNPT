@@ -1,0 +1,8 @@
+https://xss.is/threads/53632/ - возможно будет полезно
+ #* рабочий скрипт создания VPS сервера для тестирования на проникноваение от A до Z
+
+
+
+maybe it will be useful
+ # * working script for creating a VPS server for penetration testing from A to Z
+

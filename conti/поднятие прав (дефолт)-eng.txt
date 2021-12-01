@@ -1,0 +1,16 @@
+поднятие прав (дефолт)
+если видим что бот пришол с синим моником, первое что проверяем это права нашего пользака на тачке ( shell whoami /groups )
+если видим в самом верху что у нас админ права ( BULTIN\Administrators ) то смело жмякаем пкм по боту  - ацесс -  елевейт 
+далее:
+svc-exe ( запустить новую сессию на боте не из процесса а из сервисов, сессия придёт от системы с красным моником )
+uac-token-dubl ( запустить сессию от текущего пользователя, но уже с красным моником )
+
+
+
+
+raising rights (default)
+if we see that the bot came with a blue monik, the first thing we check is the rights of our user on the wheelbarrow (shell whoami /groups)
+if we see at the very top that we have admin rights (BULTIN\Administrators), then boldly press pkm on the bot - access - eleavey
+Further:
+svc-exe (start a new session on the bot not from a process but from services, the session will come from a system with a red moniker)
+uac-token-dubl (start a session from the current user, but with a red monik)

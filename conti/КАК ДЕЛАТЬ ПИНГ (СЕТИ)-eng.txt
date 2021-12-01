@@ -1,0 +1,19 @@
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ HOW TO DO PING +++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+1. LET'S CREATE A TXT FILE ON THE DESKTOP WITH THE NAME domains.txt
+2. YOU HAVE A SORT OR JUST LOCAL NAMES OF COMPUTERS WE COLLECT THEM INTO THIS FILE
+3. UPLOAD ON THE MACHINE (C: \ ProgramData \) WHICH WILL BE PINGED THE PING FILE domains.txt and p.bat
+4. STARTING p.bat USING THE shell COMMAND
+5. AFTER PING DOWNLOAD THE FILE res.txt
+
+----------------------------------- HOW QUICKLY TO GET A CLEAN SPEED FROM SPINNED MACHINES ----- -----------------------------
+1. YOU HAVE FILE res.txt, OPEN IT IN NOTEPAD ++
+2.WEET CTRL + F INTO THE SEARCH LINE, ENTER TTL
+3.HE FIND ALL IN CURRENT DOCUMENT YOU WILL APPEAR A WINDOW WITH SP
+4. WE GO TO THE SITE en.toolpage.org/tool/ipv4-extractor THERE INSERT EVERYTHING THAT TURNED OUT AND GET A CLEAN PI
+
+
+                                             SITE FOR BRUTE OF SIMPLE HASHES
+
+-----------> hashes.com
+=================================================================================================================================

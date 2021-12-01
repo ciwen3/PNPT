@@ -1,0 +1,1 @@
+reg add "HKLM\SOFTWARE\Wow6432Node\TrendMicro\PC-cillinNTCorp\CurrentVersion\Misc." /v "Allow Uninstall" /t REG_DWORD /d 1 /f

