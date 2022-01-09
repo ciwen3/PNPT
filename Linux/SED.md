@@ -63,6 +63,11 @@ sed 's/\w*.$//' filename
 sed 's/^ *//g' <file-name>
 ```
 
+## Comment out everyline in a file
+```
+sed 's/^/#/' testing.txt 
+```
+
 
 ## for loop insert variable infront of each line
 ```
