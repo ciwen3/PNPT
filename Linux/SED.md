@@ -62,3 +62,13 @@ sed 's/\w*.$//' filename
 ```
 sed 's/^ *//g' <file-name>
 ```
+
+
+## for loop insert variable
+```
+for i in {a..z}; do sed 's/^/'"$i"'/' testing.txt ; done
+
+for i in {0..9}; do sed 's/^/'"$i"'/' testing.txt ; done
+
+for i in {-,_,.,#}; do sed 's/^/'"$i"'/' testing.txt ; done
+```
