@@ -64,7 +64,7 @@ sed 's/^ *//g' <file-name>
 ```
 
 
-## for loop insert variable
+## for loop insert variable infront of each line
 ```
 for i in {a..z}; do sed 's/^/'"$i"'/' testing.txt ; done
 
