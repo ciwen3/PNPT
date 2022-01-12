@@ -15,7 +15,7 @@ get-mppreference
 ```
 
 
-# Options:
+# Other Options:
 1. https://github.com/Veil-Framework/Veil
 2. https://github.com/oddcod3/Phantom-Evasion
 3. https://github.com/govolution/avet
