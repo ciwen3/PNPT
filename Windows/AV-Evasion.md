@@ -1,4 +1,20 @@
 
+
+
+# Read Windows Defender AV Exclusions 
+https://twitter.com/splinter_code/status/1481073265380581381?s=27
+## CMD
+```
+reg query "HKLM\SOFTWARE\Microsoft\Windows Defender\Exclusions" /s
+reg query "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Exclusions" /s
+```
+## Powershell
+https://docs.microsoft.com/en-us/powershell/module/defender/?view=windowsserver2022-ps
+```
+get-mppreference
+```
+
+
 # Options:
 1. https://github.com/Veil-Framework/Veil
 2. https://github.com/oddcod3/Phantom-Evasion
