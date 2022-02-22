@@ -1,6 +1,7 @@
 #!/bin/bash
 # This will make a lot of Noise!
 # Intended to test alerting capabilities and should only be run in a test environment
+# !!!THIS WILL RUN LIVE AND ACTIVE MALWARE!!! USE LOTS OF CAUTION AND AT YOUR OWN RISK!!!
 
 # make a directory and change to that directory
 mkdir malware
@@ -29,4 +30,5 @@ chmod +x ./*
 # sudo chmod +x ./*
 
 # run each virus 60 seconds apart and background the process in a subshell
-for i in $(ls); do ./$i &; sleep 60; done 
+# keep track of what has been run in information.txt for checking purposes
+for i in $(ls); do echo "$(date), $(sha256sum $i)" >> information.txt; ./$i &; sleep 60; done 
