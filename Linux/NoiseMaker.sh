@@ -29,5 +29,5 @@ chmod +x ./*
 # uncomment the following line if needed 
 # sudo chmod +x ./*
 
-# run each virus 60 seconds apart
-for i in $(ls); do ./$i; sleep 60; done 
+# run each virus 60 seconds apart and background the process in a subshell
+for i in $(ls); do ./$i &; sleep 60; done 
