@@ -28,9 +28,6 @@ rm ./recen*
 # make it all executable
 chmod +x ./*
 
-# alternate if sudo is needed uncomment the following line
-# sudo chmod +x ./*
-
 # run each virus 60 seconds apart and background the process in a subshell
 # keep track of what has been run in information.txt for checking purposes
 for i in $(ls); do echo "$(date), $(sha256sum $i)" >> information.txt; ./$i &; sleep 60; done 
