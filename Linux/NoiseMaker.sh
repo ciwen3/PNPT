@@ -1,7 +1,9 @@
 #!/bin/bash
 # This will make a lot of Noise!
 # Intended to test alerting capabilities and should only be run in a test environment
-# !!!THIS WILL RUN LIVE AND ACTIVE MALWARE!!! USE LOTS OF CAUTION AND RUN AT YOUR OWN RISK!!!
+# THIS WILL RUN LIVE AND ACTIVE MALWARE!!! 
+# USE LOTS OF CAUTION!!!
+# RUN AT YOUR OWN RISK!!!
 
 # make a directory and change to that directory
 mkdir malware
