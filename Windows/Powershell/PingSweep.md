@@ -64,29 +64,3 @@ workflow ParallelSweep { foreach -parallel -throttlelimit 4 ($i in 1..255) {ping
 ```
 0..10 | % { $a = $_; 1..255 | % { $b = $_; ping -n 1 -w 10 "10.0.$a.$b" | select-string TTL | % { if ($_ -match "ms") { $ttl = $_.line.split('=')[2] -as [int]; if ($ttl -lt 65) { $os = "Linux" } ElseIf ($ttl -gt 64 -And $ttl -lt 129) { $os = "Windows" } else { $os = "Cisco"}; write-host "10.0.$a.$b OS: $os"; echo "10.0.$a.$b" >> scan_results.txt }}} }
 ```
-## Discover DHCP Servers:
-```
-Get-DhcpServerInDC
-```
-## Get local machine IP info
-```
-Get-NetIPConfiguration
-```
-## List Domain Controllers:
-```
-Get-ADDomainController
-```
-## List FSMO Rules:
-```
-# From Scripting Guys Blog
-# https://blogs.technet.microsoft.com/heyscriptingguy/2014/11/28/powertip-use-powershell-to-get-list-of-fsmo-role-holders/
-Get-ADDomain | Select-Object InfrastructureMaster, RIDMaster, PDCEmulator
-Get-ADForest | Select-Object DomainNamingMaster, SchemaMaster
-Get-ADDomainController -Filter * |
-Select-Object Name, Domain, Forest, OperationMasterRoles |
-Where-Object {$_.OperationMasterRoles} |
-Format-Table -AutoSize
-```
-
-
-
