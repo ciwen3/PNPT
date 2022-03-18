@@ -45,7 +45,6 @@ workflow ParallelSweep { foreach -parallel -throttlelimit 4 ($i in 1..255) {ping
 ## PS test egress filtering:
 ```
 1..1024 | %{echo ((new-object Net.Sockets.TcpClient).Connect("allports.exposed",$_)) "Port $_ is open" } 2>$null
-Because of object pipelining in PowerShell, implementing a simple ping sweep utility is quick and easy.
 ```
 ## Ping sweep and reverse lookup together:
 ```
