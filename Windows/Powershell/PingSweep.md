@@ -13,7 +13,8 @@ The loop executes the content between {} in sequence
 5. ping - Packet internet groper utility tests for ICMP connectivity between two nodes.
 6. -n 1 - The number of pings to send manual set to stop after 1
 7. -w 100 - Number of milliseconds to wait before timeout. 
-This may need to be adjusted depending on the latency of the target environment 8. 192.168.1.$_ - The IP address to ping
+This may need to be adjusted depending on the latency of the target environment 
+8. 192.168.1.$_ - The IP address to ping
 9. | Select-String ttl - Pipe all output from the loop into Select-String. Filters all lines not having ttl in them.
 
 ## PS command metrics:
