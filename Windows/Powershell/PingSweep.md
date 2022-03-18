@@ -39,8 +39,13 @@ workflow ParallelSweep { foreach -parallel -throttlelimit 4 ($i in 1..255) {ping
 8. | Select-String ttl - Filter the output of Parallel-Sweep. Only print lines containing "ttl"
 
 ## PS multi-subnet ping sweeper with OS Detection:
+### /16 Subnet
 ```
 0..10 | % { $a = $_; 1..255 | % { $b = $_; ping -n 1 -w 10 "10.0.$a.$b" | select-string TTL | % { if ($_ -match "ms") { $ttl = $_.line.split('=')[2] -as [int]; if ($ttl -lt 65) { $os = "Linux" } ElseIf ($ttl -gt 64 -And $ttl -lt 129) { $os = "Windows" } else { $os = "Cisco"}; write-host "10.0.$a.$b OS: $os"; echo "10.0.$a.$b" >> scan_results.txt }}} }
+```
+### /24 Subnet
+```
+1..255 | % {echo "192.168.1.$_"; ping -n 1 -w 100 192.168.1.$_} | Select-String ttl | % { if ($_ -match "ms") { $ttl = $_.line.split('=')[2] -as [int]; if ($ttl -lt 65) { $os = "Linux" } ElseIf ($ttl -gt 64 -And $ttl -lt 129) { $os = "Windows" } else { $os = "Cisco"}; write-host "192.168.1.$_ OS: $os"; echo "192.168.1.$_" >> scan_results.txt }}
 ```
 ## PS test egress filtering:
 ```
