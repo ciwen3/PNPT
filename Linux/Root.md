@@ -87,6 +87,17 @@ zip -j test.zip test/*
 python test.zip
 ```
 
+# Hide python code in other zip formats
+https://twitter.com/zetatwo/status/1505321639835312131?s=27
+```
+echo 'print("HELLO WORLD!")' > __main__.py
+zip my-document.docx __main__.py
+(echo '#!/usr/bin/env python3'; cat my-document.docx) > legit.docx
+./legit.docx
+```
+
+
+
 
 
 ## cronjob
