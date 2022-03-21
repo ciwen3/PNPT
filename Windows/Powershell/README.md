@@ -11,6 +11,11 @@ Get-NetIPConfiguration
 ```
 Get-ADDomainController
 ```
+## Determine if this device is the Domain Controller
+```
+DsRoleGetPrimaryDomainInformation
+```
+
 ## List FSMO Rules:
 ```
 # From Scripting Guys Blog
