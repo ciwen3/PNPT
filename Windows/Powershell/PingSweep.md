@@ -1,7 +1,7 @@
 # Powershell Pingsweepers
 https://www.sans.org/blog/pen-test-poster-white-board-powershell-ping-sweeper/
 ## PS ping sweeper:
-```
+```Powershell
 1..255 | % {echo "192.168.1.$_"; ping -n 1 -w 100 192.168.1.$_} | Select-String ttl
 ```
 ### Command Breakdown:
@@ -18,15 +18,15 @@ This may need to be adjusted depending on the latency of the target environment
 9. | Select-String ttl - Pipe all output from the loop into Select-String. Filters all lines not having ttl in them.
 
 ## PS command metrics:
-```
+```Powershell
 Measure-Command {}
 ```
 ### Example:
-```
+```Powershell
 Measure-Command {1..255 | % {echo "192.168.1.$_"; ping -n 1 -w 100 192.168.1.$_} | Select-String ttl}
 ```
 ## PS parallel ping sweeper:
-```
+```Powershell
 workflow ParallelSweep { foreach -parallel -throttlelimit 4 ($i in 1..255) {ping -n 1 -w 100 10.0.0.$i}}; ParallelSweep | Select-String ttl
 ```
 ### Command Breakdown:
@@ -41,26 +41,26 @@ workflow ParallelSweep { foreach -parallel -throttlelimit 4 ($i in 1..255) {ping
 
 ## PS multi-subnet ping sweeper with OS Detection:
 ### /16 Subnet
-```
+```Powershell
 0..10 | % { $a = $_; 1..255 | % { $b = $_; ping -n 1 -w 10 "10.0.$a.$b" | select-string TTL | % { if ($_ -match "ms") { $ttl = $_.line.split('=')[2] -as [int]; if ($ttl -lt 65) { $os = "Linux" } ElseIf ($ttl -gt 64 -And $ttl -lt 129) { $os = "Windows" } else { $os = "Cisco"}; write-host "10.0.$a.$b OS: $os"; echo "10.0.$a.$b" >> scan_results.txt }}} }
 ```
 ### /24 Subnet
-```
+```Powershell
 1..255 | % {echo "192.168.1.$_"; ping -n 1 -w 100 192.168.1.$_} | Select-String ttl | % { if ($_ -match "ms") { $ttl = $_.line.split('=')[2] -as [int]; if ($ttl -lt 65) { $os = "Linux" } ElseIf ($ttl -gt 64 -And $ttl -lt 129) { $os = "Windows" } else { $os = "Cisco"}; write-host "192.168.1.$_ OS: $os"; echo "192.168.1.$_" >> scan_results.txt }}
 ```
 ## PS test egress filtering:
-```
+```Powershell
 1..1024 | %{echo ((new-object Net.Sockets.TcpClient).Connect("allports.exposed",$_)) "Port $_ is open" } 2>$null
 ```
 ## Ping sweep and reverse lookup together:
-```
+```Powershell
 (1..254) | % {$ip="10.0.40.$_"; Write-output "$IP  $(test-connection -computername "$ip" -quiet -count 1)  $( Resolve-DnsName $ip -ErrorAction Ignore |select -exp NameHost )  "}  
 ```
 ## Reverse Lookup:
-```
+```Powershell
 (1..254) | % {$ip="10.0.40.$_"; Write-output "$IP  $( Resolve-DnsName $ip -ErrorAction Ignore |select -exp NameHost )  "}    
 ```
 ## PS multi-subnet ping sweeper with OS detection:
-```
+```Powershell
 0..10 | % { $a = $_; 1..255 | % { $b = $_; ping -n 1 -w 10 "10.0.$a.$b" | select-string TTL | % { if ($_ -match "ms") { $ttl = $_.line.split('=')[2] -as [int]; if ($ttl -lt 65) { $os = "Linux" } ElseIf ($ttl -gt 64 -And $ttl -lt 129) { $os = "Windows" } else { $os = "Cisco"}; write-host "10.0.$a.$b OS: $os"; echo "10.0.$a.$b" >> scan_results.txt }}} }
 ```
