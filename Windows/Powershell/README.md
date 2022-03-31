@@ -1,23 +1,23 @@
 # Powershell Commands
 ## Discover DHCP Servers:
-```
+```Powershell
 Get-DhcpServerInDC
 ```
 ## Get local machine IP info
-```
+```Powershell
 Get-NetIPConfiguration
 ```
 ## List Domain Controllers:
-```
+```Powershell
 Get-ADDomainController
 ```
 ## Determine if this device is the Domain Controller
-```
+```Powershell
 DsRoleGetPrimaryDomainInformation
 ```
 
 ## List FSMO Rules:
-```
+```Powershell
 # From Scripting Guys Blog
 # https://blogs.technet.microsoft.com/heyscriptingguy/2014/11/28/powertip-use-powershell-to-get-list-of-fsmo-role-holders/
 Get-ADDomain | Select-Object InfrastructureMaster, RIDMaster, PDCEmulator
@@ -45,7 +45,7 @@ ID         :
 AccessType : Allow
 PS: Somebody you should probably look into this ;) just saying
 ```
-```
+```Powershell
 Get-Acl | Format-List
 Get-Acl -Path * | Format-List
 ```
@@ -54,27 +54,27 @@ Looking for:
 Access: BUILTIN\Administrators Allow  FullControl
 ```
 ### Get an ACL for a folder:
-```
+```Powershell
 Get-Acl C:\Windows
 ```
 
 ### Get an ACL for a folder using wildcards
-```
+```Powershell
 Get-Acl C:\Windows\s*.log | Format-List -Property PSPath, Sddl
 ```
 
 ### Get count of Audit entries for an ACL
-```
+```Powershell
 Get-Acl C:\Windows\s*.log -Audit | ForEach-Object { $_.Audit.Count }
 ```
 
 ### Get an ACL for a registry key
-```
+```Powershell
 Get-Acl -Path HKLM:\System\CurrentControlSet\Control | Format-List
 ```
 
 ### Get an ACL using **InputObject**
-```
+```Powershell
 Get-Acl -InputObject (Get-StorageSubSystem -Name S087)
 ```
 
