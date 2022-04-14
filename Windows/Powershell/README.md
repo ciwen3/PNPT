@@ -85,6 +85,7 @@ Get-Acl -InputObject (Get-StorageSubSystem -Name S087)
 
 
 # Run Powershell command from CMD
+https://superuser.com/questions/1080239/run-powershell-command-from-cmd
 ```Powershell
 powershell -command " PasteCodeHere "
 ```
