@@ -84,10 +84,19 @@ Get-Acl -InputObject (Get-StorageSubSystem -Name S087)
 
 
 
-
-
-
-
+# Run Powershell command from CMD
+```Powershell
+powershell -command " PasteCodeHere "
+```
+# Run Powershell script from CMD
+the & is used to call a File. when you're only using a command & is unnessecary, when you want to call a script, you should use it.
+```Powershell
+powershell -command "& 'C:\foobar.ps1'"
+```
+You could also use 
+```Powershell
+powershell -file C:\file.ps1 to call a script
+```
 
 
 
