@@ -16,3 +16,6 @@ https://try.nightfall.ai/radar
 |	link | which searches for all links to a site or URL | link:”example.com” |
 |	cache | which displays Google’s cached copy of a page | cache:yeahhub.com |
 |	info | which displays summary information about a page | info:www.example.com |
+
+
+```"BEGIN * PRIVATE KEY" ext:pem | ext:key | ext:txt | ext:csr```
