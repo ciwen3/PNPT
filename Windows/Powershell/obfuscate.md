@@ -34,5 +34,13 @@ $IP
 ```
 10.1.1.100
 ```
-
-
+## ScriptBlock
+```
+&([scriptblock]::create((New-Object System.IO.StreamReader(New-Object
+System.IO.Compression.GzipStream((New-Object
+System.IO.MemoryStream(,[System.Convert]::FromBase64String(...),[System.IO.Compression.CompressionMode]::Decompress))).ReadToEnd()))';
+```
+1. [scriptblock]::create - create an object representing a pre-compiled block of powershell script New-Object System.IO.StreamReader - read file data
+2. New-Object System.IO.Compression.GzipStream - decompress byte array
+3. New-Object System.IO.MemoryStream(, - Passing an array of bytes to system.IO.MemoryStream (the coma following the paraenthesis is important) https://scriptingetc.wordpress.com/2019/05/22/passing-an-array-of-bytes-to-system-io-memorystream/
+4. [System.Convert]::FromBase64String - which converts a base64-encoded string to a byte array
