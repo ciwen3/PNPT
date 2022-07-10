@@ -1,3 +1,17 @@
+# Substitution:
+```
+$gwcY=((''{''+''3}nabl{2}Sc{''+''1}i''+''pt{0}lockL''+''ogging''+'''')-f''B'',''r'',''e'',''E''); 
+```
+```
+''B'',''r'',''e'',''E''
+  0     1     2     3
+$gwcY=EnableScriptBlockLogging
+```
+***Note:*** this is just a concatenation and can be removed when reversing 
+```
+''+''
+```
+
 
 # Reverse a String:
 ## Non Regex
@@ -44,3 +58,23 @@ System.IO.MemoryStream(,[System.Convert]::FromBase64String(...),[System.IO.Compr
 2. New-Object System.IO.Compression.GzipStream - decompress byte array
 3. New-Object System.IO.MemoryStream(, - Passing an array of bytes to system.IO.MemoryStream (the coma following the paraenthesis is important) https://scriptingetc.wordpress.com/2019/05/22/passing-an-array-of-bytes-to-system-io-memorystream/
 4. [System.Convert]::FromBase64String - which converts a base64-encoded string to a byte array
+
+
+
+
+
+
+# Powershell notes:
+1. NoE – NoExit: Doesn’t exit after running the command, i.e. creates a process and stays running as powershell.exe
+2. NoP – NoProfile: Doesn’t load the PowerShell profile
+3. NonI – NonInteractive: Doesn’t create an interactive prompt, i.e. it runs the command without the PowerShell window popping up a persistent terminal on the user’s screen
+4. ExecutionPolicy Bypass: Bypasses the execution policy if it is set (self-explanatory)
+5. C – Command: What to run (again, pretty self-explanatory)
+6. Set-Alias cmdlet - sal: creates a shortcut ‘a’ for New-Object
+
+
+
+
+
+
+
