@@ -1,4 +1,5 @@
 # Substitution:
+Using Substitution to break up the code making it harder to read or pattern match. 
 ```
 $gwcY=((''{''+''3}nabl{2}Sc{''+''1}i''+''pt{0}lockL''+''ogging''+'''')-f''B'',''r'',''e'',''E''); 
 ```
@@ -91,3 +92,14 @@ System.IO.MemoryStream(,[System.Convert]::FromBase64String(...),[System.IO.Compr
 
 
 
+# Resoures:
+1. https://github.com/danielbohannon/Invoke-Obfuscation
+2. https://github.com/danielbohannon/Revoke-Obfuscation
+3. https://github.com/danielbohannon/Invoke-CradleCrafter
+4. https://github.com/JoelGMSec/Invoke-Stealth
+5. https://github.com/GhostPack/Invoke-Evasion
+6. https://github.com/tokyoneon/Chimera
+7. https://github.com/klezVirus/chameleon
+8. https://github.com/vysecurity/ps1-toolkit
+9. https://github.com/CBHue/PyFuscation
+10. https://github.com/Mr-Un1k0d3r/Base64-Obfuscator
