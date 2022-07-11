@@ -22,7 +22,7 @@ $gwcY=EnableScriptBlockLogging
 ```
 
 # Splitting
-Adding white space that is removed when the code it ran. This won't affect its ability to run but will make it harder to read or pattern match. 
+Adding white space (concatenation) that is removed when the code it ran. This won't affect its ability to run but will make it harder to read or pattern match. 
 ```
 ''+''
 ```
