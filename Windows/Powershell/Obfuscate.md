@@ -7,11 +7,24 @@ $gwcY=((''{''+''3}nabl{2}Sc{''+''1}i''+''pt{0}lockL''+''ogging''+'''')-f''B'',''
   0     1     2     3
 $gwcY=EnableScriptBlockLogging
 ```
-***Note:*** this is just a concatenation and can be removed when reversing 
+
+# Splitting
+Adding white space that is removed when the code it ran. This won't affect its ability to run but will make it harder to read or pattern match. 
 ```
 ''+''
 ```
+***Note:*** this is just a concatenation and can be removed when reversing 
 
+
+# Variables
+Use variables to break up the code making it harder to read or pattern match
+```
+$nTlW = New-Object Microsoft.CSharp.CSharpCodeProvider
+$cUj0x = New-Object System.CodeDom.Compiler.CompilerParameters
+$cUj0x.ReferencedAssemblies.AddRange(@("System.dll", [PsObject].Assembly.Location))
+$cUj0x.GenerateInMemory = $True
+$zgA = $nTlW.CompileAssemblyFromSource($cUj0x, $dn)
+```
 
 # Reverse a String:
 ## Non Regex
