@@ -93,13 +93,14 @@ System.IO.MemoryStream(,[System.Convert]::FromBase64String(...),[System.IO.Compr
 
 
 # Resoures:
-1. https://github.com/danielbohannon/Invoke-Obfuscation
-2. https://github.com/danielbohannon/Revoke-Obfuscation
-3. https://github.com/danielbohannon/Invoke-CradleCrafter
-4. https://github.com/JoelGMSec/Invoke-Stealth
-5. https://github.com/GhostPack/Invoke-Evasion
-6. https://github.com/tokyoneon/Chimera
-7. https://github.com/klezVirus/chameleon
-8. https://github.com/vysecurity/ps1-toolkit
-9. https://github.com/CBHue/PyFuscation
-10. https://github.com/Mr-Un1k0d3r/Base64-Obfuscator
+1. https://www.huntress.com/blog/from-powershell-to-payload-an-analysis-of-weaponized-malware
+2. https://github.com/danielbohannon/Invoke-Obfuscation
+3. https://github.com/danielbohannon/Revoke-Obfuscation
+4. https://github.com/danielbohannon/Invoke-CradleCrafter
+5. https://github.com/JoelGMSec/Invoke-Stealth
+6. https://github.com/GhostPack/Invoke-Evasion
+7. https://github.com/tokyoneon/Chimera
+8. https://github.com/klezVirus/chameleon
+9. https://github.com/vysecurity/ps1-toolkit
+10. https://github.com/CBHue/PyFuscation
+11. https://github.com/Mr-Un1k0d3r/Base64-Obfuscator
