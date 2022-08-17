@@ -48,3 +48,5 @@ https://christitus.com/disable-win-defender/
 
 https://christitus.com/files/windefender_disable.reg
 
+# Powershell: 
+![Powershell](https://pbs.twimg.com/media/FZlUrlmXoAEUj_Z?format=png&name=large)
