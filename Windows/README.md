@@ -14,6 +14,7 @@ https://lolbas-project.github.io/
 10. https://github.com/antonioCoco/RemotePotato0
 11. https://github.com/S3cur3Th1sSh1t/SharpNamedPipePTH
 12. https://github.com/cube0x0/CVE-2021-1675
+13. maps Windows APIs to common techniques used by malware - https://malapi.io/
 
 ### HiveNightmare Powershell One Liner:
 https://twitter.com/splinter_code/status/1420546784250769408
