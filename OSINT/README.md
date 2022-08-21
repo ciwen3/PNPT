@@ -5,6 +5,7 @@
 4. https://inteltechniques.com/tools/
 5. https://www.osintcombine.com/osint-bookmarks
 6. https://github.com/sinwindie/OSINT
+7. https://www.hackers-arise.com/osint
 
 
 
@@ -12,6 +13,15 @@
 
 # Resources
 1. https://felt.com/
+2. https://wigle.net/
+3. https://grep.app/
+4. https://www.binaryedge.io/about.html
+5. https://www.onyphe.io/
+6. https://digitalinvestigator.blogspot.com/2022/05/email-address-osint.html
+7. https://www.shodan.io/
+8. https://twitter.com/_sn0ww/status/1431295333644980232?s=27
+9. https://www.youtube.com/watch?v=OONjbRAR-TM
+10. https://start.me/p/DPYPMz/the-ultimate-osint-collection
 
 
 
