@@ -70,10 +70,17 @@ Microsoft Defender Antivirus Service                                            
 ```
 ### Disable firewall
 ```cmd
+sc config WinDefend start= disabled
 sc stop WinDefend
 ```
 ```powershell
 Set-MpPreference -DisableRealtimeMonitoring $true
+Uninstall-WindowsFeature -Name Windows-Defender
+```
+#### Help:
+```cmd
+sc /?
+sc config /?
 ```
 
 # Firewall Enumeration:
@@ -81,6 +88,10 @@ Set-MpPreference -DisableRealtimeMonitoring $true
 netsh advfirewall firewall dump
 netsh firewall show state
 
+```
+### Disbale Firewall:
+```
+netsh advfirewall set all state off
 ```
 
 
