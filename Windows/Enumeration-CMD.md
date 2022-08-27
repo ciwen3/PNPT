@@ -48,22 +48,34 @@ c:\unattend.xml
 %WINDIR%\Panther\Unattended.xml
 
 ```
+## Command search for files:
 ```
 dir c:\*vnc.ini /s /b
 dir c:\ /s /b | findstr /si *vnc.ini
 
 ```
-# Firewall/AV Enumeration:
+# AV Enumeration:
 ```
+sc query windefend
 sc query | findstr /i "virus"
 wmic service get Name,Displayname | findstr /i virus
 
 ```
 
+## Example: 
 ```
 C:\Users\bob>wmic service get Name,Displayname | findstr /i virus
 Microsoft Defender Antivirus Network Inspection Service                             WdNisSvc
 Microsoft Defender Antivirus Service                                                WinDefend
 ```
 
+# Firewall Enumeration:
+```
+netsh advfirewall firewall dump
+netsh firewall show state
+
+```
+
+
+# Tools: 
 
