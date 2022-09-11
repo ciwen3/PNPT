@@ -1,4 +1,5 @@
-# Windows 7 Circumvent the Password:
+# Windows 7 - Windows 11
+## Circumvent the Password:
 This might work on other versions as well.
 
 1. Boot from a Linux USB
@@ -44,3 +45,19 @@ replace "username" with the users actual name.
 enter the new password or leave blank for no password (press Enter)
 
 reboot and login
+
+
+
+## Other possible attack vectors 
+- On-Screen Keyboard: C:\Windows\System32\osk.exe, launched when the  Windows + Ctrl + O key combination is pressed
+- Magnifier: C:\Windows\System32\Magnify.exe, launched when the Windows logo key + Plus sign (+) key combination is pressed
+- Narrator: C:\Windows\System32\Narrator.exe, launched when the Windows logo key + Ctrl + Enter key combination is pressed 
+- Display Switcher: C:\Windows\System32\DisplaySwitch.exe, launched when the hold down the left CTRL key + left Windows Key, and use the left and right arrow keys combination is pressed
+- App Switcher: C:\Windows\System32\AtBroker.exe, launched when the Alt + Tab key combination is pressed
+- Utilman: C:\Windows\System32\utilman.exe, launched when the Windows + U key combination is pressed
+
+
+
+
+## References:
+https://attack.mitre.org/techniques/T1546/008/
