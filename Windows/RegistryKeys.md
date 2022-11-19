@@ -1,4 +1,14 @@
 # Windows system info
+
+### The Windows registry includes the following four Run and RunOnce keys:
+https://learn.microsoft.com/en-us/windows/win32/setupapi/run-and-runonce-registry-keys
+```
+HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run
+HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunOnce
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce
+```
+Use Run or RunOnce registry keys to make a program run when a user logs on. The Run key makes the program run every time the user logs on, while the RunOnce key makes the program run one time, and then the key is deleted. 
 ### Version
 ```
 Software\Microsoft\Windows NT\CurrentVersion: Windows version, Service Pack, Installation time and the registered owner
