@@ -1,3 +1,7 @@
+# Windows Commands:
+1. https://ss64.com/nt/
+2. https://ss64.com/ps/
+
 # Living Off the Land:
 https://lolbas-project.github.io/
 
