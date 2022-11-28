@@ -1,3 +1,10 @@
+
+# Windows Password locations:
+```
+HKEY_LOCAL_MACHINE\Security\Cache
+C:\Windows\System32\config\SECURITY 
+```
+
 # Full Backup of AD in "IFM" media mode
 https://twitter.com/cnotin/status/1445047314788274177/photo/1
 ```
