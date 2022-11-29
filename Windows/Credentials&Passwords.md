@@ -3,6 +3,7 @@
 ```
 HKEY_LOCAL_MACHINE\Security\Cache
 C:\Windows\System32\config\SECURITY 
+C:\Windows\System32\NTDS.dit
 ```
 
 # Full Backup of AD in "IFM" media mode
