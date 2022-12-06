@@ -115,7 +115,10 @@ meterpreter >
 ```
 meterpreter > load powershell
 ```
-
+# Load Shell on any system
+```
+meterpreter > shell
+```
 
 # Meterpreter: Help
 
