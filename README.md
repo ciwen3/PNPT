@@ -96,6 +96,10 @@ searchsploit afd windows local
   /usr/share/windows-resources/binaries/
   ```
 
+## UUID Decode:
+1. [https://www.uuidtools.com/decode](https://www.uuidtools.com/decode)
+
+
 ## Default Passwords for Devices
 1. https://cirt.net/passwords
 2. https://www.passwordsdatabase.com/
@@ -245,5 +249,3 @@ searchsploit afd windows local
 ### All of my Public projects, opinions and advice are offered “as-is”, without warranty, and disclaiming liability for damages resulting from using any of my software or taking any of my advice.
 
 
-## UUID Decode:
-- [uuidtools.com/decode](https://www.uuidtools.com/decode)
