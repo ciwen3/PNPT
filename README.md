@@ -246,4 +246,4 @@ searchsploit afd windows local
 
 
 ## UUID Decode:
-- uuidtools.com/decode
+- [uuidtools.com/decode](https://www.uuidtools.com/decode)
