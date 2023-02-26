@@ -14,6 +14,14 @@ The PNPT certification exam is a one-of-a-kind ethical hacking certification exa
 
 The standalone exam is perfect for students who are already well-versed in OSINT, external penetration testing techniques (such as vulnerability scanning, information gathering, password spraying, credential stuffing, and exploitation), and internal penetration testing techniques (such as LLMNR Poisoning, NTLM Relay Attacks, Kerberoasting, IPv6 attacks, and more).
 
+## videos to watch in order
+1. [Practical Ethical Hacking](https://youtu.be/fNzpcB7ODxQ)
+2. [Linux Privilege Escalation for Beginners](https://youtu.be/ZTnwg3qCdVM)
+3. Windows Privilege Escalation for Beginners
+4. [Open Source Intelligence (OSINT) Fundamentals ](https://youtu.be/qwA6MmbeGNo0)
+5. External Pentest Playbook
+
+
 ### Does my exam voucher expire?
 No, exam vouchers do not expire.
 
