@@ -2,6 +2,9 @@
 1. https://ss64.com/nt/
 2. https://ss64.com/ps/
 
+# Windows Binaries 
+https://learn.microsoft.com/en-us/sysinternals/downloads/
+
 # Living Off the Land:
 https://lolbas-project.github.io/
 
