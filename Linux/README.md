@@ -1,6 +1,9 @@
 # Linux Commands:
 https://ss64.com/bash/
 
+# Linux sys calls
+https://syscalls.mebeim.net/?table=x86/64/x64/v6.2
+
 # Linux Exploits: 
 1. Linux Kernel Exploits — https://github.com/lucyoa/kernel-exploits
 2. GTFOBins (Bypass local restrictions) — https://gtfobins.github.io/
