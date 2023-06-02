@@ -69,6 +69,10 @@ https://academy.tcm-sec.com/
 8. http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
 9. https://sqlwiki.netspi.com/attackQueries/
 
+## Gamification
+1. XSS game - https://xss-game.appspot.com/
+2. https://xss.pwnfunction.com/
+3. http://www.xssgame.com/
 
 ## Study:
 1. Buffer Overflow 
