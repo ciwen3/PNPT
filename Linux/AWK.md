@@ -6,7 +6,7 @@ $2 for the second field.
 $n for the nth field.
 ```
 
-# AWK (print):
+# AWK (print): equivalent to cat filename
 ### print file contents:
 ```
 awk '{print $0}' filename
@@ -37,7 +37,7 @@ awk '$1 ~ "#" {print $2}' filename
 awk '$1 !~ "#" {print $2}' filename
 ```
 
-### print specific lines of the file:
+### print specific lines of the file: equivalent to head filename
 ```
 awk '(NR>=0 && NR<=11){print} (NR==11){exit}' filename
 ```
@@ -72,12 +72,12 @@ awk '/[0-9]$/ { print }' filename
 awk '{ if($1 ~ /123) print }' filename
 ```
 
-### replace string:
+### replace string: equivalent to sed
 ```
 awk '{ gsub("string to remove","string to input"); print $0}' /path/to/file > /path/to/save/file
 ```
 
-### remove string:
+### remove string: equivalent to sed
 ```
 awk '{ gsub("string to remove",""); print $0}' /path/to/file > /path/to/save/file
 ```
@@ -98,6 +98,7 @@ awk '{print substr($0,2,length()-1);}' input.txt > output.txt
 ```
 
 
+
 # AWK replace other tools
 
 ### cat filename:
@@ -114,3 +115,14 @@ awk '/#/' filename
 ```
 awk '{print $0} (NR==11){exit}' filename 
 ```
+
+### sed s/"string to remove"/"string to input"/g > /path/to/save/file
+```
+awk '{ gsub("string to remove","string to input"); print $0}' /path/to/file > /path/to/save/file
+```
+
+### sed s/"string to remove"/""/g > /path/to/save/file
+```
+awk '{ gsub("string to remove",""); print $0}' /path/to/file > /path/to/save/file
+```
+
