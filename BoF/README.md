@@ -1,9 +1,8 @@
 # Buffer Over Flow
 these notes come from watching the Cyber Mentors Buffer Overflow Videos on youtube 
-
-https://www.youtube.com/playlist?list=PLLKT__MCUeix3O0DPbmuaRuR_4Hxo4m3G
-
-https://www.youtube.com/watch?v=ncBblM920jw
+1. https://www.youtube.com/playlist?list=PLLKT__MCUeix3O0DPbmuaRuR_4Hxo4m3G
+2. https://www.youtube.com/watch?v=ncBblM920jw
+3. https://samsclass.info/127/127_2020.shtml
 
 All python code here is written in python 2 because that is what comes with kali by default. 
 ## Steps:
