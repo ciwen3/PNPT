@@ -1,4 +1,6 @@
-https://webcache.googleusercontent.com/search?q=cache:XB6wWoYCa8cJ:https://oxasploits.com/posts/simple-buffer-overflow-exploitation-walkthrough-gdb/&hl=en&gl=us&client=ubuntu-sn
+1. https://webcache.googleusercontent.com/search?q=cache:XB6wWoYCa8cJ:https://oxasploits.com/posts/simple-buffer-overflow-exploitation-walkthrough-gdb/&hl=en&gl=us&client=ubuntu-sn
+2. https://bufferoverflows.net/for-beginners-linux-buffer-overflow-challenge/
+
 
 # GDB commands
 ```
