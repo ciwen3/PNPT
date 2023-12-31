@@ -10,14 +10,17 @@ info functions        # look at the functions that are inside the binary by usin
 disas main            # short for disasemble main which will show the assembly code for the main function of the program.
 info breakpoints      # look at breakpoints that have been set
 info registers        # look at the curent values of the registers
-b main                # set breakpoint at main
+break main                # set breakpoint at main
 next                  # will let you go through one operation at a time after the break point has been hit
 b * main+39           # set breakpoint 
 b * 0x64413764        # set breakpoint by address
 clear                 # Delete any breakpoints at the next instruction to be executed in the selected stack frame
-r                     # run
+run                   # run
+list                  # list source code that GDB is going through
+print num             # will print the current variable value for variable num
 p system              # will give the address of where system is located
 p exit                # gives the exit address
+info locals           # lists all variable values
 x/20s $rsp            # x : eXamine; 20s : 20 values in string; $rsp : for register RSP (Stack Pointer)
 ```
 
