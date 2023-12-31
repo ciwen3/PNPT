@@ -23,7 +23,11 @@ p system              # will give the address of where system is located
 p exit                # gives the exit address
 info locals           # lists all variable values
 x/20s $rsp            # x : eXamine; 20s : 20 values in string; $rsp : for register RSP (Stack Pointer)
-layout next           # show assembly and source code, may need to hit enter a few times. 
+layout next           # show assembly and source code, may need to hit enter a few times
+next                  # goes to the next piece of code
+nexti                 # goes to the next line of code even if blank
+ref                   # refresh the screen to fix layout issues
+x/i $pc               # examine the instruction at pc
 ```
 
 # msf
