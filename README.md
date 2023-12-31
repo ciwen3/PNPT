@@ -59,15 +59,16 @@ No.  We do monitor network traffic in the exam environment and have detection me
 https://academy.tcm-sec.com/
 
 # Helpful Cheatsheets:
-1. https://cheatsheet.haax.fr/
-2. https://book.hacktricks.xyz/
-3. https://gtfobins.github.io/
-4. https://evotec.xyz/the-only-powershell-command-you-will-ever-need-to-find-out-who-did-what-in-active-directory/
-5. https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet#active-directory-exploitation-cheat-sheet
-6. https://sqlwiki.netspi.com/
-7. https://github.com/NetSPI/PowerUpSQL/wiki
-8. http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
-9. https://sqlwiki.netspi.com/attackQueries/
+1. https://www.ired.team/
+2. https://cheatsheet.haax.fr/
+3. https://book.hacktricks.xyz/
+4. https://gtfobins.github.io/
+5. https://evotec.xyz/the-only-powershell-command-you-will-ever-need-to-find-out-who-did-what-in-active-directory/
+6. https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet#active-directory-exploitation-cheat-sheet
+7. https://sqlwiki.netspi.com/
+8. https://github.com/NetSPI/PowerUpSQL/wiki
+9. http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
+10. https://sqlwiki.netspi.com/attackQueries/
 
 ## Gamification
 1. XSS game - https://xss-game.appspot.com/
