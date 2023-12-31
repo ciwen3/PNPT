@@ -1,5 +1,6 @@
-1. https://webcache.googleusercontent.com/search?q=cache:XB6wWoYCa8cJ:https://oxasploits.com/posts/simple-buffer-overflow-exploitation-walkthrough-gdb/&hl=en&gl=us&client=ubuntu-sn
-2. https://bufferoverflows.net/for-beginners-linux-buffer-overflow-challenge/
+1. https://ftp.gnu.org/old-gnu/Manuals/gdb/html_node/gdb_1.html
+2. https://webcache.googleusercontent.com/search?q=cache:XB6wWoYCa8cJ:https://oxasploits.com/posts/simple-buffer-overflow-exploitation-walkthrough-gdb/&hl=en&gl=us&client=ubuntu-sn
+3. https://bufferoverflows.net/for-beginners-linux-buffer-overflow-challenge/
 
 
 # GDB commands
@@ -13,6 +14,7 @@ b main                # set breakpoint at main
 next                  # will let you go through one operation at a time after the break point has been hit
 b * main+39           # set breakpoint 
 b * 0x64413764        # set breakpoint by address
+clear                 # Delete any breakpoints at the next instruction to be executed in the selected stack frame
 r                     # run
 p system              # will give the address of where system is located
 p exit                # gives the exit address
