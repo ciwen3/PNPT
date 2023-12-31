@@ -14,6 +14,7 @@ break main                # set breakpoint at main
 next                  # will let you go through one operation at a time after the break point has been hit
 b * main+39           # set breakpoint 
 b * 0x64413764        # set breakpoint by address
+disable               # disbales all breakpoints
 clear                 # Delete any breakpoints at the next instruction to be executed in the selected stack frame
 run                   # run
 list                  # list source code that GDB is going through
