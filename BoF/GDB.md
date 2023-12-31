@@ -10,6 +10,7 @@ disas main            # short for disasemble main which will show the assembly c
 info breakpoints      # look at breakpoints that have been set
 info registers        # look at the curent values of the registers
 b main                # set breakpoint at main
+next                  # will let you go through one operation at a time after the break point has been hit
 b * main+39           # set breakpoint 
 b * 0x64413764        # set breakpoint by address
 r                     # run
