@@ -2,6 +2,15 @@
 
 Open Bounties:
 ```
+https://www.hackerone.com/
+https://www.bugcrowd.com/products/bug-bounty/
+https://www.openbugbounty.org/
+https://bughunters.google.com/
+https://www.microsoft.com/en-us/msrc/bounty-defender
+https://www.intel.com/content/www/us/en/security/security-practices/vulnerability-management/bug-bounty-program.html
+https://www.facebook.com/whitehat/
+https://security.apple.com/bounty/
+https://www.theregister.com/2022/07/05/dod-hackus-bug-bounty/
 verizon media
 tesla motors
 ```
