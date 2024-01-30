@@ -130,6 +130,8 @@ sessions -i <session #>
 ```
 
 ### Upgrading shells to Meterpreter
+https://docs.metasploit.com/docs/pentesting/metasploit-guide-upgrading-shells-to-meterpreter.html#:~:text=If%20you%20have%20an%20existing%20session%2C%20either%20Meterpreter%2C,-u%20-1%20Or%20run%20the%20shell_to_meterpreter%20module%20manually%3A
+
 If you have an existing session, either Meterpreter, an SSH, or a basic command shell - you can open a new Meterpreter session with:
 ```
 sessions -u 3
