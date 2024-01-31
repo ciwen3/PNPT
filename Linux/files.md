@@ -92,3 +92,11 @@
 - inittab  (initialization sequence)
 - inetd files (which can be used to start other network daemons)
 
+#User History
+```
+cat ~/.bash_history
+cat ~/.nano_history
+cat ~/.atftp_history
+cat ~/.mysql_history
+cat ~/.php_history
+```
