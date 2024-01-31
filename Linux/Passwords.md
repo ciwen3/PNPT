@@ -84,6 +84,13 @@ john --format=descrypt --wordlist /usr/share/wordlists/rockyou.txt hash.txt
 john --format=descrypt hash --show
 ```
 
+### crack zip file password
+https://www.freecodecamp.org/news/crack-passwords-using-john-the-ripper-pentesting-tutorial/
+```
+zip2john file.zip > zip.hashes
+john zip.hashes
+```
+
 ## Generate MD5 password hash:
 ```
 python -c "import random,string,crypt;
