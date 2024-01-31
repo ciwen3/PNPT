@@ -384,6 +384,14 @@ grep -i pass [filename]
 #Use grep to look for password in filename
 grep -C 5 "password" [filename]
 ```
+https://medium.com/@tinopreter/linux-password-mining-58e341635f1c#:~:text=Meaning%20that%20we%20will%20locate%20any%20text%20files,grep%20--color%3Dauto%20-rnw%20%27%2F%27%20-ie%20%22Password%22%20--color%3Dalways%202%3E%2Fdev%2Fnull
+```
+grep --color=auto -rnw '/' -ie "Password" --color=always 2>/dev/null
+```
+https://stackoverflow.com/questions/56847942/unix-grep-for-hardcoded-passwords
+```
+grep -irE '(password|pwd|pass)[[:space:]]*=[[:space:]]*[[:alpha:]]+' *
+```
 
 ### Find to locate Password Files:
 ```
