@@ -91,6 +91,12 @@ zip2john file.zip > zip.hashes
 john zip.hashes
 ```
 
+# Hashcat
+https://hashcat.net/wiki/doku.php?id=hashcat
+
+
+
+# Generate hashes:
 ## Generate MD5 password hash:
 ```
 python -c "import random,string,crypt;
