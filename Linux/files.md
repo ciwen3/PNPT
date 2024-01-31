@@ -4,4 +4,91 @@
 - /home/[USER]/.ssh/
 - /etc/shadow
 - /etc/passwd
-- 
+- .rhosts (allows remote logins)
+- ~/.ssh/authorized_keys
+- /etc/ (configuration files)
+- /etc/fstab
+- /etc/cloud/cloud.cfg
+- /etc/passwd (contains the user names)
+- /etc/shadow (contains the hashed passwords)
+- /etc/group (user groups)
+- /etc/hosts
+- /etc/host.conf
+- /etc/resolv.conf (DNS)
+- /etc/hosts (IP addresses of the specified hosts)
+- /etc/mtab (dynamic file system information)
+- /etc/profile 
+- /etc/protocols (list of IP protocols)
+- /etc/services (port names for network services)
+- /etc/my.cnf (MySQL/MariaDB link to /etc/my.cnf.d)
+- /etc/my.cnf.d/ (MySQL/MariaDB configurations are actually located)
+- /etc/my.cnf.d/client.cnf (MySQL/MariaDB client configuration)
+- /etc/my.cnf.d/server.cnf - MySQL/MariaDB server configuration
+- /etc/apache2/ 
+- /etc/apache2/conf/httpd.conf (Apache configuration file)
+- /etc/apache2/conf/sites-enabled/ (enabled Apache virtual hosts)
+- /etc/crontab
+- /etc/machine-id
+- /etc/os-release
+- /etc/httpd/ (web server settings)
+- /etc/php/php.ini (main PHP configuration file)
+- /etc/systemd/ (directory with Systemd files)
+- /etc/systemd/resolved.conf
+- /etc/ssh/ (configuration files and SSH keys)
+- /etc/ssh/ssh_config (SSH client configuration file)
+- /etc/ssh/sshd_config (SSH server configuration file)
+- /etc/ssh/ssh_host_* (other formats)
+- /etc/ssh/ssh_host_dsa_key
+- /etc/ssh/ssh_host_dsa_key.pub
+- /etc/init.d (all the startup scripts)
+- /etc/syslog.conf
+- /etc/chttp.conf
+- /etc/lighttpd.conf
+- /etc/cups/cupsd.conf
+- /etc/inetd.conf
+- /etc/apache2/apache2.conf
+- /etc/my.conf
+- /etc/httpd/conf/httpd.conf
+- /opt/lampp/etc/httpd.conf
+- /proc/ (Virtual File System containing info about processes and other system information)
+- /proc/cmdline (Kernel command line information)
+- /proc/console (Information about current consoles including tty)
+- /proc/cpuinfo
+- /proc/devices (Device drivers currently configured for the running kernel)
+- /proc/dma (Info about current DMA channels)
+- /proc/fb (Framebuffer devices)
+- /proc/filesystems (Current filesystems supported by the kernel)
+- /proc/iomem (Current system memory map for devices)
+- /proc/ioports (Registered port regions for input output communication with device)
+- /proc/keys
+- /proc/key-users
+- /proc/loadavg (System load average)
+- /proc/locks (Files currently locked by kernel)
+- /proc/meminfo (Info about system memory)
+- /proc/misc (Miscellaneous drivers registered for miscellaneous major device)
+- /proc/modules (Currently loaded kernel modules)
+- /proc/mounts (List of all mounts in use by system)
+- /proc/net/*
+- /proc/net/fib_trie (IPv4 info)
+- /proc/net/if_inet6 (IPv6 info)
+- /proc/net/netstat
+- /proc/net/route
+- /proc/net/snmp
+- /proc/net/tcp (3500007F translates to 127.0.0.53)
+- /proc/net/unix (running processes)
+- /proc/partitions (Detailed info about partitions available to the system)
+- /proc/pci (Information about every PCI device)
+- /proc/stat (Record or various statistics kept from last reboot)
+- /proc/swap (Information about swap space)
+- /proc/uptime (Uptime information in seconds)
+- /proc/version (Kernel version, gcc version, and Linux distribution installed)
+- /proc/vmstat
+- /run (Information about the system since it was loaded)
+- /var/log/ (directory contains the logs of various programs and services)
+- /var/log/httpd/ (Apache web server logs)
+- /var/log/apache2/ (Apache web server logs)
+- /var/log/wtmp  (login log files)
+- /tmp
+- inittab  (initialization sequence)
+- inetd files (which can be used to start other network daemons)
+
