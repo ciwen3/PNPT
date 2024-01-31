@@ -374,9 +374,31 @@ $@
 ```
 
 
+# Password Searches:
+### Grep hardcoded passwords:
+```
+#Use grep to look for user in filename
+grep -i user [filename]
+#Use grep to look for pass in filename
+grep -i pass [filename]
+#Use grep to look for password in filename
+grep -C 5 "password" [filename]
+```
 
+### Find to locate Password Files:
+```
+#find php file and check them for the variable $password
+find . -name "*.php" -print0 | xargs -0 grep -i -n "var $password"
+# search for .txt files with admin in the name
+find / -type f -iname "*admin*.txt"
+```
 
-
+### Known Files to check:
+- /home/[USER]/.ssh/
+- /etc/shadow
+- /etc/passwd
+- /home/[USER]/.bash_history
+- /var/lib/mysql/mysql/user.MYD
 
 
 # Generate hashes:
