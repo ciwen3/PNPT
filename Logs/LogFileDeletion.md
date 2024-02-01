@@ -1,5 +1,5 @@
-https://www.youtube.com/watch?v=9ZpDo7dWO4c
-
+- https://www.youtube.com/watch?v=9ZpDo7dWO4c
+- https://github.com/SafeBreach-Labs/EDRaser
 Techniques to get EDR to delete log files using key words or phrases to cause the EDR to think the file is malicious. 
 
 ### Examples: 
