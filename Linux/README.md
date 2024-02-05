@@ -16,3 +16,7 @@ https://syscalls.mebeim.net/?table=x86/64/x64/v6.2
 
 # References:
 1. https://twitter.com/hetmehtaa/status/1561281344910397440?s=27&t=bgnPZIgX8UeHAWZldnH7ng
+
+
+## Make terminal like kali:
+https://linuxopsys.com/topics/make-ubuntu-terminal-look-like-kali-linux
