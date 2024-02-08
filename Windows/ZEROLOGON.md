@@ -8,6 +8,7 @@
 4. need the exploit code
   - https://github.com/risksense/zerologon/blob/master/set_empty_pw.py
   - https://www.youtube.com/watch?v=6xMGsdD-ArI
+
 **That is all!!**
 
 ## set_empty_pw.py
