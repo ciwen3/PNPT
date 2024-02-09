@@ -1,3 +1,6 @@
+# Tool list
+https://www.kali.org/tools/all-tools/
+
 # Wordlists: 
 ```
 /usr/share/wfuzz/wordlist/Injections/
