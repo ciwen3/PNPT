@@ -22,6 +22,66 @@ https://lolbas-project.github.io/
 11. https://github.com/S3cur3Th1sSh1t/SharpNamedPipePTH
 12. https://github.com/cube0x0/CVE-2021-1675
 13. maps Windows APIs to common techniques used by malware - https://malapi.io/
+14. https://github.com/wietze/HijackLibs
+15. https://hijacklibs.net/
+16. GTFOBINS.github.io
+17. LOLDRIVERS.io
+18. lolbas-project.github.io
+19. iots-project.com ???
+20. lots-project.com ???
+21. filesec.io
+22. malapi.io
+23. hijacklibs.net
+24. wadcoms.github.io
+25. loobins.io
+26. lolapps-project.github.io
+27. mandiant bring your own land
+28. lolol.farm
+
+
+- [Cyber Chef](https://gchq.github.io/CyberChef/) Web app for analysing and decoding data
+- [Cyber Chef Recipes](https://github.com/mattnotmax/cyberchef-recipes) A list of cyber-chef recipes and curated links
+- [LOLBAS](https://lolbas-project.github.io/) Windows LOLBins and how they are abused
+- [GTFOBins](https://gtfobins.github.io/) Unix LOLBins and how they are abused
+- [MITRE ATT&CK](https://attack.mitre.org/) Globally-accessible knowledge base of adversary tactics and techniques
+- [MITRE D3FEND](https://d3fend.mitre.org/) Knowledge graph of countermeasures to ATT&CK TTP's
+- [Wazuh](https://wazuh.com/) Open source unified XDR and SIEM protection for endpoints and cloud workloads
+- [MozDef](https://github.com/mozilla/MozDef) Enterprise defense platform
+- [Stronghold](https://github.com/alichtman/stronghold) A way to securely configure your Mac
+- [ChopShop](https://github.com/MITRECND/chopshop) Framework to aid analysts in the creation and execution of pynids based decoders and detectors of APT tradecraft
+- [RockNSM](https://rocknsm.io/) An open source Network Security Monitoring platform
+- [HELK](https://github.com/Cyb3rWard0g/HELK) Open source hunt platforms with advanced analytics
+- [AlienVault OSSIM](https://www.alienvault.com/open-threat-exchange/projects) Feature-rich open source SIEM w/ collection, normalization and correlation
+- [Prelude](https://www.prelude-siem.org/) Universal SIEM
+- [TheHive](https://thehive-project.org/) Open source and free Security Incident Response Platform
+- [OpenEDR](https://github.com/ComodoSecurity/openedr) Free and open source EDR
+- [OpenSOC](https://github.com/OpenSOC/opensoc) Open source big data technologies in order to offer a centralized tool for security monitoring and analysis
+- [Munin](https://github.com/Neo23x0/munin) Online Hash Checker for Virustotal and Other Services
+- [Threat Hunt Mind Maps](https://github.com/christophetd/mindmaps) Mindmaps for cloud security, threat hunting and incident response
+- [Hybrid-Analysis](https://www.hybrid-analysis.com/) Free malware analysis service
+- [Manalyzer](https://www.manalyzer.org/) Free service which performs static analysis on PE executables to detect undesirable behavior
+- [URLScan](https://urlscan.io/) Free URL/website scanner
+- [Intezer Analyze](https://analyze.intezer.com/) Free IOC/malware scanner
+- [AnyRun](https://app.any.run/) Interactive malware analysis
+- [JoeSandbox](https://www.joesandbox.com/#windows) Malware anaylsis
+- [IRIS-H](https://iris-h.services/pages/dashboard#/pages/dashboard) Online automated static analysis of files stored in a directory-based or strictly structured formats
+- [Yoroi](https://yomi.yoroi.company/upload) Free file analyzer
+- [Har-Sai](https://har-sia.info/index-en.html) Lookup things related to a specific CVE
+- [Rastrea2r](https://github.com/rastrea2r/rastrea2r) Multi-platform open source tool that allows incident responders and SOC analysts to triage suspect systems and hunt for Indicators of Compromise (IOCs) across thousands of endpoints in minutes
+- [HijackLibs](https://github.com/wietze/hijacklibs) Aims to keep a record of publicly disclosed DLL Hijacking opportunities
+- [Diaphore](https://github.com/joxeankoret/diaphora) Program diffing tool working as an IDA plugin
+- [MalAPI](https://malapi.io/) List of Windows APIs to common techniques used by malware
+- [Sentinel Queries](https://github.com/reprise99/Sentinel-Queries) List of Azure Sentinel queries
+- [EchoTrail](https://www.echotrail.io/) Windows Process Insights
+- [PulledPork](https://github.com/shirkdog/pulledpork) PulledPork for Snort and Suricata rule management
+- [Microsoft Threat Modeling](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-getting-started) Microsoft tool related to threat modeling
+- [DocIntel](https://docintel.org/) DocIntel is an open-source context-centric threat intelligence platform
+- [Multi Router Traffic Grapher (MRTG)](https://oss.oetiker.ch/mrtg/) Monitor SNMP network devices and draw pretty pictures showing how much traffic has passed through each interface
+- [GHOSTS](https://github.com/cmu-sei/GHOSTS) Realistic user simulation framework for cyber simulation, training, and exercise
+- [DiscØvery](https://github.com/CyberLens/Discovery) Security analysis tool for IoT and 5G systems
+- [LogonTracer](https://github.com/JPCERTCC/LogonTracer) Investigate malicious Windows logon by visualizing and analyzing Windows event log
+- [Exmaple Pentest Reports](https://www.offsec.com/reports/sample-penetration-testing-report.pdf) Sample penetration testing reports
+- [EC2 IR](https://www.cadosecurity.com/aws-ec2-incident-response/) General walkthrough of IR capes in AWS
 
 ### HiveNightmare Powershell One Liner:
 https://twitter.com/splinter_code/status/1420546784250769408
