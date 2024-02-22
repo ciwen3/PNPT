@@ -97,6 +97,35 @@
 - [Exmaple Pentest Reports](https://www.offsec.com/reports/sample-penetration-testing-report.pdf) Sample penetration testing reports
 - [EC2 IR](https://www.cadosecurity.com/aws-ec2-incident-response/) General walkthrough of IR capes in AWS
 
+1. Windows Kernel Exploits — https://github.com/SecWiki/windows-kernel-exploits
+2. LOLBins - https://lolbas-project.github.io/#
+3. Windows Takeover completely from Linux — https://www.sprocketsecurity.com/blog/the-ultimate-tag-team-petitpotam-and-adcs-pwnage-from-linux
+4. Windows Credentials — https://www.alteredsecurity.com/post/fantastic-windows-logon-types-and-where-to-find-credentials-in-them
+5. Microsoft Won't Fix List — https://github.com/cfalta/MicrosoftWontFixList/blob/main/README.md
+6. https://github.com/GossiTheDog/HiveNightmare
+7. https://github.com/GossiTheDog/SystemNightmare
+8. https://github.com/leechristensen/SpoolSample
+9. https://github.com/topotam/PetitPotam
+10. https://github.com/antonioCoco/RemotePotato0
+11. https://github.com/S3cur3Th1sSh1t/SharpNamedPipePTH
+12. https://github.com/cube0x0/CVE-2021-1675
+13. maps Windows APIs to common techniques used by malware - https://malapi.io/
+14. https://github.com/wietze/HijackLibs
+15. https://hijacklibs.net/
+16. GTFOBINS.github.io
+17. LOLDRIVERS.io
+18. lolbas-project.github.io
+19. iots-project.com ???
+20. lots-project.com ???
+21. filesec.io
+22. malapi.io
+23. hijacklibs.net
+24. wadcoms.github.io
+25. loobins.io
+26. lolapps-project.github.io
+27. mandiant bring your own land
+28. lolol.farm
+
 ### Network-Analysis
 - [Arkime](https://github.com/arkime) Open source full packet capturing, indexing and database system. It rebuilds sessions automatically!
 - [Wireshark](https://www.wireshark.org/) Tride and true network protocol analyzer
