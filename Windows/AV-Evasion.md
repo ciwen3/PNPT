@@ -1,6 +1,15 @@
+# Check for anti virus installed
+```cmd
+WMIC /Node:localhost /Namespace:\\root\SecurityCenter2 Path AntiVirusProduct Get displayName /Format:List
+```
+```
+Microsoft Windows [Version 10.0.19045.4046]
+(c) Microsoft Corporation. All rights reserved.
 
+C:\Users\test>WMIC /Node:localhost /Namespace:\\root\SecurityCenter2 Path AntiVirusProduct Get displayName /Format:List
 
-
+displayName=Windows Defender
+```
 # Read Windows Defender AV Exclusions 
 https://twitter.com/splinter_code/status/1481073265380581381?s=27
 ## CMD
