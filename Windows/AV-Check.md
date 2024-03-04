@@ -14,7 +14,7 @@ displayName=Windows Defender
 
 
 https://gist.github.com/jdhitsolutions/1b9dfb31fef91f34c54b344c6516c30b
-# Check for anti virus installed from CMD
+# Check for anti virus installed from Powershell
 ```powershell
 Get-CimInstance -Namespace root/SecurityCenter2 -ClassName AntivirusProduct
 ```
