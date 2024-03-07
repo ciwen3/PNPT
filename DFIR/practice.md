@@ -1,1 +1,10 @@
-https://digitalcorpora.org/corpora/
+1. https://digitalcorpora.org/corpora/
+2. https://dfircheatsheet.github.io/
+3. https://dfir.tymyrddin.dev/docs/notes/ios
+4. https://dfir.tymyrddin.dev/docs/notes/android
+5. https://aboutdfir.com/toolsandartifacts/android/
+6. https://www.forensicfocus.com/articles/android-forensics/
+7. https://www.gsmarena.com/
+8. http://phonedb.net/
+9. https://www.phonescoop.com/
+10. https://fccid.io/
