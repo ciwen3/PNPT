@@ -375,3 +375,16 @@ check terminal running NetCat and you should have a connection
 
 ## More Practice:
 https://download.vulnhub.com/brainpan/Brainpan.zip
+
+
+# Additional resources for learning Pwn
+**[Deusx64](https://deusx64.ai)**<br>
+**[Exploit Education](https://exploit.education)**<br>
+**[Pwn.College](https://pwn.college)**<br>
+**[ROPEmporium](https://ropemporium.com)**<br>
+**[How2Heap](https://github.com/shellphish/how2heap)**<br>
+**[NightMare](https://guyinatuxedo.github.io)**<br>
+**[Ir0nstone](https://ir0nstone.gitbook.io/notes/types/stack)**<br>
+**[PinkDraconian](https://www.youtube.com/playlist?list=PLeSXUd883dhjmKkVXSRgI1nJEZUDzgLf\_)**<br>
+**[LiveOverflow](https://www.youtube.com/playlist?list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN)**<br>
+**[More](https://github.com/Crypto-Cat/CTF#readme)**
