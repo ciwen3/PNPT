@@ -38,6 +38,9 @@ https://lolbas-project.github.io/
 27. mandiant bring your own land
 28. lolol.farm
 
+# bypass Powershell policy
+1. https://www.netspi.com/blog/technical-blog/network-penetration-testing/15-ways-to-bypass-the-powershell-execution-policy/
+
 
 - [Cyber Chef](https://gchq.github.io/CyberChef/) Web app for analysing and decoding data
 - [Cyber Chef Recipes](https://github.com/mattnotmax/cyberchef-recipes) A list of cyber-chef recipes and curated links
