@@ -68,6 +68,12 @@ This will show you the inode number that should match with the inode number show
 
 ### References:
  - https://x.com/craighrowland/status/1802850025443336414
+ - https://www.halkynconsulting.co.uk/a/2020/11/linux-incident-response-guide/
  - https://library.mosse-institute.com/articles/2022/05/perform-remote-code-execution-with-the-use-of-reverse-shells/perform-remote-code-execution-with-the-use-of-reverse-shells.html
  - https://tomtietz.github.io/blog/2023/03/07/remote-shells.html
  - https://redcanary.com/blog/threat-detection/process-streams/
+ - https://www.thedfirspot.com/post/linux-forensics-collecting-a-triage-image-using-the-uac-tool
+ - https://aboutdfir.com/toolsandartifacts/linux/
+ - https://www.linuxleo.com/
+ - https://www.cybertriage.com/blog/collecting-linux-dfir-artifacts-with-uac/
+ - https://linuxsecurity.expert/security-tools/
