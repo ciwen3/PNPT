@@ -40,6 +40,9 @@ show out up
 /proc/PID/fd
 ls -al
 ```
+![/proc/pid/fd](https://redcanary.com/wp-content/uploads/2022/08/image2-1024x468.png "/proc/pid/fd")
+
+
 you can see that stdin, stdout, and stderr are all connected to sockets and the inode number that we will see again later. This is a red flag. 
 find out what those socket types are. Look for weird files open, payload dirs, etc.
 
@@ -48,6 +51,8 @@ find out what those socket types are. Look for weird files open, payload dirs, e
 ```bash
 lsof -p PID
 ```
+![lsof PID](https://redcanary.com/wp-content/uploads/2022/08/image1.png "lsof")
+
 this will show the ip addresses of the remote host it has conencted to. Can also use tools like netstat or ss to see open sockets.
 
 
