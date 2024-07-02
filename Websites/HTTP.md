@@ -11,7 +11,7 @@ GET / HTTP/1.1
 #### Set Header
 ```
 nc 127.0.0.1 80 -vvv
-HEAD / 
+HEAD / HTTP/1.1
 ```
 
 ### Curl: 
