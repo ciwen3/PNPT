@@ -1,16 +1,32 @@
 # HTTP Requests
 ### NetCat:
 https://linux.die.net/man/1/nc
+
+#### Get Header
 ```
 nc 127.0.0.1 80 -vvv
 GET / HTTP/1.1
 ```
 
+#### Set Header
+```
+nc 127.0.0.1 80 -vvv
+HEAD / 
+```
+
 ### Curl: 
 https://linux.die.net/man/1/curl
+
+#### Get Header
 ```
 curl --header http://127.0.0.1:80
 ```
+
+#### Set Header
+```
+curl -H 'HOST:7c43ffa66e5bc954405452af33a87d5e' 127.0.0.1:80
+```
+
 
 ### Python: 
 https://requests.readthedocs.io/en/latest/
