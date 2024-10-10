@@ -18,4 +18,7 @@ https://try.nightfall.ai/radar
 |	info | which displays summary information about a page | info:www.example.com |
 
 
-```"BEGIN * PRIVATE KEY" ext:pem | ext:key | ext:txt | ext:csr```
+```
+"BEGIN * PRIVATE KEY" ext:pem | ext:key | ext:txt | ext:csr
+intitle:"index of" ".cert.pem" | ".key.pem" | ".crt" | ".pem"
+```
