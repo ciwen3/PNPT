@@ -1,3 +1,6 @@
+# Google Dorks
+https://www.exploit-db.com/google-hacking-database
+
 # Automated Tools
 1. truffleHog
 Searches through git repositories for secrets, digging deep into commit history and branches. This is effective at finding secrets accidentally committed. https://github.com/trufflesecurity/truffleHog
