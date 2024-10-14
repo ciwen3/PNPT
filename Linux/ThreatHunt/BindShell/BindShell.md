@@ -1,5 +1,7 @@
 # Simulated Bind Shell Attack
 
+Taken from: https://sandflysecurity.com/blog/basic-linux-malware-process-forensics-for-incident-responders/
+
 If you want to simulate the attack in this post, you can use the netcat command which opens a TCP port on 31337, but sends all data to /dev/null instead of a real shell. The commands below delete the binary as well after it starts so you can experiment with recovering the deleted process binary.
 
 ```bash
@@ -18,7 +20,7 @@ netstat -nalp
 
 netstat shows a process named “x7” PID with a listening port that we don’t recognize.
 
-![Linux Bind Shell Suspicious Port](https://example.com/image.jpg)
+![Linux Bind Shell Suspicious Port](./tmp-netstat-listing.avif)
 
 
 ### Obtain /proc Listing for Suspicious Process ID
@@ -34,7 +36,7 @@ Below we see a couple odd things.
 
 A lot of exploits work out of /tmp and /dev/shm on Linux. These are both world writable directories on most all Linux systems and many malware and exploits will drop their payloads there to run. A process that is making its home in /tmp or /dev/shm is suspicious.
 
-![Linux Process Forensics /proc Listing](https://example.com/image.jpg)
+![Linux Process Forensics /proc Listing](./tmp-proc-listing.avif)
 
 
 ### Recover Deleted Linux Malware Binary
@@ -43,7 +45,7 @@ Before we do anything else, we’ll recover the deleted binary. As long as the p
 cp /proc/<PID>/exe /tmp/recovered_bin
 ```
 
-![Recovering Deleted Malware Process Binary on Linux](https://example.com/image.jpg)
+![Recovering Deleted Malware Process Binary on Linux](./tmp-recover-binary.avif)
 
 
 ### Obtain Deleted Linux Malware Hashes
@@ -58,7 +60,7 @@ sha1sum /tmp/recovered_bin
 <identical hash here>
 ```
 
-![Getting Linux Malware Cryptographic Hash](https://example.com/image.jpg)
+![Getting Linux Malware Cryptographic Hash](./tmp-get-hashes.avif)
 
 
 ### Explore Linux Malware Command Line
@@ -72,7 +74,7 @@ cat /proc/<PID>/comm
 cat /proc/<PID>/cmdline
 ```
 
-![Getting Linux Malware Command Line](https://example.com/image.jpg)
+![Getting Linux Malware Command Line](./tmp-cmdline.avif)
 
 
 
@@ -83,7 +85,7 @@ Now let’s take a look at the environment our malware inherited when it started
 strings /proc/<PID>/environ
 ```
 
-![Obtaining Linux Malware Process Environment](https://example.com/image.jpg)
+![Obtaining Linux Malware Process Environment](./tmp-environ.avif)
 
 
 
@@ -94,7 +96,7 @@ We’ll now investigate the file descriptors the malware has open. This can ofte
 ls -al /proc/<PID>/fd
 ```
 
-![Linux Malware Open File Descriptors](https://example.com/image.jpg)
+![Linux Malware Open File Descriptors](./tmp-fd-open.avif)
 
 
 
@@ -105,7 +107,7 @@ Another area to look into is the Linux process maps. This shows libraries the ma
 cat /proc/<PID>/maps
 ```
 
-![Linux Malware Process Maps](https://example.com/image.jpg)
+![Linux Malware Process Maps](./tmp-maps-open.avif)
 
 
 
@@ -118,7 +120,7 @@ cat /proc/<PID>/stack
 
 In this case we see some network accept() calls indicating this is a network server waiting for a connection. Sometimes there won’t be anything obvious here, but sometimes there is. It just depends what the process is doing so it’s best to look.
 
-![Linux Malware Forensics Process Stack](https://example.com/image.jpg)
+![Linux Malware Forensics Process Stack](./tmp-stack.avif)
 
 
 ### Get Linux Malware Status
@@ -128,7 +130,7 @@ Finally, let’s look at /proc/<PID>/status for overall process details. This ca
 cat /proc/<PID>/status
 ```
 
-![Linux Malware /proc Status](https://example.com/image.jpg)
+![Linux Malware /proc Status](./tmp-status.avif)
 
 
 
