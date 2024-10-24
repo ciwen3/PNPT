@@ -111,22 +111,20 @@ https://www.ashemery.com/dfir.html#Unallocated01
 10. https://github.com/antonioCoco/RemotePotato0
 11. https://github.com/S3cur3Th1sSh1t/SharpNamedPipePTH
 12. https://github.com/cube0x0/CVE-2021-1675
-13. maps Windows APIs to common techniques used by malware - https://malapi.io/
 14. https://github.com/wietze/HijackLibs
 15. https://hijacklibs.net/
-16. GTFOBINS.github.io
-17. LOLDRIVERS.io
-18. lolbas-project.github.io
-19. iots-project.com ???
-20. lots-project.com ???
-21. filesec.io
-22. malapi.io
-23. hijacklibs.net
-24. wadcoms.github.io
-25. loobins.io
-26. lolapps-project.github.io
+16. https://GTFOBINS.github.io
+17. https://LOLDRIVERS.io
+18. https://lolbas-project.github.io
+21. https://filesec.io
+22. https://malapi.io
+23. https://hijacklibs.net
+24. https://wadcoms.github.io
+25. https://loobins.io
+26. https://lolapps-project.github.io
 27. mandiant bring your own land
-28. lolol.farm
+28. https://lolol.farm
+29. https://wtfbins.wtf/
 
 ### Network-Analysis
 - [Arkime](https://github.com/arkime) Open source full packet capturing, indexing and database system. It rebuilds sessions automatically!
