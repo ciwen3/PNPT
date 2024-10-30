@@ -50,5 +50,5 @@ chmod +x OSCP-expect.sh
 
 ## from terminal run 
 ```
-for i in {1..1000}; do ./OSCP-expect.sh; done
+while true; do ./OSCP-expect.sh; done &
 ```
