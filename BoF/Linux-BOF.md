@@ -24,6 +24,29 @@ Practical strategies for preventing Linux buffer overflow vulnerabilities includ
 9. https://www.ibm.com/docs/en/zos/2.4.0?topic=overview-address-space-layout-randomization
 
 
+### Resources
+- [crypto cat](https://github.com/Crypto-Cat)
+- [How2Heep](https://github.com/shellphish/how2heap)
+- [Nightmare](https://guyinatuxedo.github.io/)
+- [CyberSec Stack](https://ir0nstone.gitbook.io/notes/binexp/stack)
+- [Pwn College](https://pwn.college/)
+- [Pwndbg + GEF + Peda — One for all, and all for one](https://infosecwriteups.com/pwndbg-gef-peda-one-for-all-and-all-for-one-714d71bf36b8)
+- [CheckSec](https://github.com/slimm609/checksec)
+- [Ropper](https://github.com/sashs/Ropper)
+- [pwntools](https://github.com/Gallopsled/pwntools-tutorial)
+- [Cyber Chef](https://gchq.github.io/CyberChef/)
+- [Disassembler - Ghidra/IDA/Radare/BinaryNinja/Hopper: https://gist.github.com/liba2k/d522b4...
+- [Debugger - GDB-PwnDBG/GEF/PEDA: https://infosecwriteups.com/pwndbg-ge...
+- [Checksec: https://github.com/slimm609/checksec.sh
+- [Ropper:  https://github.com/sashs/Ropper
+- [Ghidra: https://ghidra-sre.org/CheatSheet.html
+- [PwnTools: https://github.com/Gallopsled/pwntool...
+- [CyberChef: https://gchq.github.io/CyberChef
+- [HackTricks: https://book.hacktricks.xyz/exploitin...
+- [GTFOBins: https://gtfobins.github.io
+- [Decompile Code: https://www.decompiler.com
+- [Run Code: https://tio.run
+
 
 ### Reference:
 1. https://www.youtube.com/watch?v=hdlHPv48gNY&list=PLt9cUwGw6CYEmxx_3z1d-uT9zdEd58yOq
