@@ -1,0 +1,33 @@
+IP addresses are typically shown in dotted-decimal format (e.g., 192.0.2.1), but there are other ways to represent the same address, often used to evade detection.
+
+Examples Using 8.8.8.8 (Google Public DNS):
+
+Octal: 010.010.010.010 or 010101010.
+Hexadecimal: 0x8080808 or segmented as 0x8.0x8.0x8.0x8.
+Decimal: 134744072.
+Binary: 00001000.00001000.00001000.00001000.
+Encoded: %38%2E%38%2E%38%2E%38.
+Mixed: 0x8.010.8.134744072.
+
+Zero-Optimized Notation
+For 10.0.0.1, variations include:
+10.1
+10.0000000001.
+
+These representations are often accepted by browsers, allowing adversaries to hide malicious IPs and bypass detection systems.
+
+Similarly, URL formats present significant challenges to content inspection systems. One common tactic involves using the @ character in URIs, creating deceptive URLs that lead to semantic attacks. For instance:
+
+Simple Example: https://fake@bing.com resolves to bing.com, ignoring the “fake” part.
+Multiple Iterations: https://fake@fake@fake@fake@bing.com also resolves to bing.com.
+This method works with IP address variations as well:
+
+Hexadecimal: https://test@0x2afac78e
+Decimal: https://@721078158
+Mixed: https://192.168.1@0x2afac78e
+Camouflage Techniques
+Attackers may mask malicious URLs behind seemingly benign ones:
+
+https://example.com@malicioussite.com
+https://localhost@bing.com
+These methods exploit browser-supported formats, bypassing content inspection by disguising malicious intent. Although such attacks have been known for years, their effectiveness continues to pose a challenge.
