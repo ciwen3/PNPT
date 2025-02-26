@@ -1,0 +1,25 @@
+User-Mode Helper Attack:
+========================
+mount -t cgroup -o rdma cgroup /tmp/esc
+
+
+
+SUID/GUID:
+==========
+ls -lR / | awk '$1 ~ /s/ { print $9 }'
+ls -lR / | grep -E '^.{0,9}s'
+tree -p -u -g -f / | grep -E '^.{0,10}s'
+
+findmnt
+stat
+namei -mo 
+
+
+for file in $(ls -R /); do
+    stat "$file" | grep 'Access'
+done
+
+
+for file in $(ls -R /); do
+    namei -m "$file" | grep 's'
+done
