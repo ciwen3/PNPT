@@ -31,3 +31,21 @@ Attackers may mask malicious URLs behind seemingly benign ones:
 https://example.com@malicioussite.com
 https://localhost@bing.com
 These methods exploit browser-supported formats, bypassing content inspection by disguising malicious intent. Although such attacks have been known for years, their effectiveness continues to pose a challenge.
+
+
+
+Example Redirect to Google.com (172.217.19.164 IP address):
+DNS redirect: https://www.walmart.com@google.com
+IP redirect: https://www.facebook.com@172.217.19.164
+Decimal redirect: https://www.facebook.com@2899907492
+Hex redirect: https://www.facebook.com@0xacd913a4
+Octal redirect: https://www.facebook.com@025466211644
+Binary redirect: https://www.facebook.com@10101100.11011001.00010011.10100100 (Not Working)
+URL redirect: https://www.facebook.com@%3172%2E%3217%2E%319%2E%3164
+https://www.facebook.com@
+https://www.facebook.com@
+
+https://www.ipaddressguide.com/ip
+https://www.browserling.com/tools/ip-to-hex
+https://www.browserling.com/tools/ip-to-oct
+https://www.browserling.com/tools/ip-to-bin
