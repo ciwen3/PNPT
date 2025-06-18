@@ -17,6 +17,9 @@ Websites:
 
 2. https://crt.sh/
 	- Domains, subdomains, SSL certs
+	- Enumerate Subdomains & Emails Using CRT
+		- curl -s "https://crt.sh/?q=%25.nasa.gov&output=json" | jq -r '.[].name_value' | sed 's/\*\.//g' | sort -u
+		- Replace http://nasa.gov with your target
 
 3. shodan.io
 	- servers
